@@ -1,0 +1,8 @@
+title: Traverse Anywhere
+description: The user guide for Traverse Anywhere by Execute Games.
+url: https://dr-rank.github.io
+baseurl: /traverse-anywhere-guide
+markdown: kramdown
+kramdown:
+  input: GFM
+exclude: [README.md, LICENSE]

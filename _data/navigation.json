@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Start here",
+    "url": "/",
+    "source": "index.md"
+  },
+  {
+    "title": "Features",
+    "url": "/features.html",
+    "source": "features.md"
+  },
+  {
+    "title": "Set up an existing character",
+    "url": "/set-up-an-existing-character.html",
+    "source": "set-up-an-existing-character.md"
+  },
+  {
+    "title": "Understand the character setup rows",
+    "url": "/understand-the-character-setup-rows.html",
+    "source": "understand-the-character-setup-rows.md"
+  },
+  {
+    "title": "Choose and manage your traversal animations",
+    "url": "/choose-and-manage-your-traversal-animations.html",
+    "source": "choose-and-manage-your-traversal-animations.md"
+  },
+  {
+    "title": "Create a character with full animations",
+    "url": "/create-a-character-with-full-animations.html",
+    "source": "create-a-character-with-full-animations.md"
+  },
+  {
+    "title": "Make an object traversable",
+    "url": "/make-an-object-traversable.html",
+    "source": "make-an-object-traversable.md"
+  },
+  {
+    "title": "Adjust proxies and ledges",
+    "url": "/adjust-proxies-and-ledges.html",
+    "source": "adjust-proxies-and-ledges.md"
+  },
+  {
+    "title": "Use Mover",
+    "url": "/use-mover.html",
+    "source": "use-mover.md"
+  },
+  {
+    "title": "Test and troubleshoot",
+    "url": "/test-and-troubleshoot.html",
+    "source": "test-and-troubleshoot.md"
+  },
+  {
+    "title": "Property reference",
+    "url": "/property-reference.html",
+    "source": "property-reference.md"
+  }
+]

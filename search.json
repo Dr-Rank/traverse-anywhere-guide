@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /search.json
+---
+[{% assign guides = site.pages | where: "guide", true %}{% for entry in guides %}{"title": {{ entry.title | jsonify }}, "url": {{ entry.url | relative_url | jsonify }}, "text": {{ entry.content | markdownify | strip_html | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]
