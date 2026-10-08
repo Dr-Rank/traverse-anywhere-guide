@@ -1,19 +1,18 @@
 # Traverse Anywhere user guide
 
-The public illustrated guide for Traverse Anywhere by Execute Games.
+**Read the illustrated guide:** https://dr-rank.github.io/traverse-anywhere-guide/
 
-**Read the guide:** https://dr-rank.github.io/traverse-anywhere-guide/
+The complete guide is on one continuous page, following the 22-page PDF layout: cover, setup introduction, grouped feature pictures with captions, and practical instructions.
 
 ## Update the guide
 
-1. Open a page on the website and choose **Edit this page**. Sign in to GitHub.
-2. Edit the Markdown text. Use `##` for headings and `**text**` for bold.
-3. Preview the changes, then commit them to `main`. GitHub Pages rebuilds automatically; allow a few minutes.
+- Edit chapter text in `_includes/guide/`. Each file is Markdown: use `##` for headings and `**text**` for bold.
+- Edit the cover, feature captions and page grouping in `index.md`.
+- Replace pictures in `assets/images/`, keeping their filenames, or update their links in `index.md`. WebP keeps downloads small.
+- Commit changes to `main`. GitHub Pages automatically rebuilds the site; allow a few minutes.
 
-To replace an illustration, upload its replacement to `assets/images/` and keep the filename, or change its link in `features.md`. Use WebP for compact images. Captions live beside the images in that page.
+`_data/navigation.json` controls the contents links. `assets/style.css` controls the PDF-like layout. On phones, pages adapt to the screen; printing restores page breaks. Search reads the sections on the page automatically.
 
-To add a page, copy the front matter from an existing Markdown page, give it a unique title and permalink, and add it to `_data/navigation.json`. Search includes every page marked `guide: true` automatically.
-
-`_layouts/default.html` controls the page template; `assets/style.css` controls appearance. This site uses GitHub Pages' built-in Jekyll build, with no custom workflow or paid hosting dependency.
+Old chapter links redirect to the matching section of the complete guide. The additional property reference remains at `property-reference.html`.
 
 This repository contains documentation and illustrative media only. It does not distribute the plugin, Game Animation Sample, private test geometry or project assets. Product and character names remain the property of their respective owners.
