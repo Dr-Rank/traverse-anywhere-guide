@@ -109,6 +109,14 @@ permalink: /
 {% capture chapter %}{% include guide/use-mover.md %}{% endcapture %}{{ chapter | markdownify }}
 <div class="sheet-footer"><span>EXECUTE GAMES / TRAVERSE ANYWHERE / USER GUIDE</span><span>21</span></div></section>
 
+<section class="sheet" id="prepare-a-gmc-project" aria-label="Prepare a GMC project"><h2>Prepare a GMC project</h2>
+{% capture chapter %}{% include guide/prepare-a-gmc-project.md %}{% endcapture %}{{ chapter | markdownify }}
+<div class="sheet-footer"><span>EXECUTE GAMES / TRAVERSE ANYWHERE / USER GUIDE</span><span>22</span></div></section>
+
+<section class="sheet" id="create-a-first-person-character" aria-label="Create a first person character"><h2>Create a first person character</h2>
+{% capture chapter %}{% include guide/create-a-first-person-character.md %}{% endcapture %}{{ chapter | markdownify }}
+<div class="sheet-footer"><span>EXECUTE GAMES / TRAVERSE ANYWHERE / USER GUIDE</span><span>23</span></div></section>
+
 <section class="sheet" id="test-and-troubleshoot" aria-label="Test and troubleshoot"><h2>Test and troubleshoot</h2>
 {% capture chapter %}{% include guide/test-and-troubleshoot.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / TRAVERSE ANYWHERE / USER GUIDE</span><span>22</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / TRAVERSE ANYWHERE / USER GUIDE</span><span>24</span></div></section>

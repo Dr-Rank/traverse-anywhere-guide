@@ -24,4 +24,4 @@ The generated chooser selects among the imported traversal montages. To change i
 
 ## Check the result
 
-Try both walking and running approaches. Watch hands during their contact with the ledge, feet during landing, and the return to locomotion. The grounded climb chooser supports heights up to **300 cm**; usable depth, headroom and available animations also matter.
+Try both walking and running approaches. Watch hands during their contact with the ledge, feet during landing, and the return to locomotion. The maximum climb height has increased from **250 cm to 300 cm**. The current grounded climb chooser supports heights up to **300 cm**; usable depth, headroom and available animations also matter.

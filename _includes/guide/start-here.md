@@ -4,7 +4,7 @@ This guide takes you through installation, character setup, animations, objects,
 
 ## Before making changes
 
-**Back up your project.** Make a source-control commit or a complete project copy before running setup or importing animations. Some changes affect shared skeletons, Animation Blueprints and project settings. Unreal's Undo is not a replacement for a backup.
+**Back up your project.** Make a source-control commit or a complete project copy before running setup or importing animations. Some changes affect shared skeletons, Animation Blueprints and project settings. Your own input, animation, movement and gameplay setup may behave differently: some features may break or not work as expected. Test on a copy first. Unreal's Undo is not a replacement for a backup.
 
 ## Install and open the plugin
 

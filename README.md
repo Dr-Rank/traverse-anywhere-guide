@@ -2,7 +2,7 @@
 
 **Read the illustrated guide:** https://dr-rank.github.io/traverse-anywhere-guide/
 
-The complete guide is on one continuous page, following the 22-page PDF layout: cover, setup introduction, grouped feature pictures with captions, and practical instructions.
+The complete guide is on one continuous page, following the 24-page PDF layout: cover, setup introduction, grouped feature pictures with captions, and practical instructions.
 
 ## Update the guide
 
