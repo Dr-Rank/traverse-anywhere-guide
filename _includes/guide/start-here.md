@@ -2,6 +2,8 @@
 
 **First or Third Person. Your Choice of Supported Skeleton.**
 
+**True offline retargeting. No dynamic runtime retargeting.** The prepared animation library targets your chosen supported skeleton directly, so the character plays its own retargeted assets in game. [How the full animation setup works](#create-a-character-with-full-animations).
+
 Choose **CMC, GMC, Network Prediction Mover or Chaos Mover**. Existing documentation and the editor may still use the shorter name **Traverse Anywhere**.
 
 Prepare your character, then right-click a static mesh and choose **Make Traversable**. GASP & Traverse Anywhere creates the Blueprint, adds traversal and generates its proxies for you. Drag the new Blueprint into your level and try it.

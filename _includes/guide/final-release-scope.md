@@ -8,7 +8,7 @@ This guide covers the intended final version as well as established traversal se
 | --- | --- |
 | Traversal and objects | Hurdles, vaults, mantles/climbs; automatic ledge queries; moving-object transforms; fitted proxies, collision, filters and editor diagnostics; planned camera-facing height markers and closer surface fitting. |
 | Four movement systems | CMC, GMC, Network Prediction Mover and Chaos Mover, including dedicated full-animation setup choices. |
-| Full animation setup | Locomotion, motion matching, pose history, choosers, Pose Search databases, mirroring, warping and supported skeleton libraries. |
+| Full animation setup | Locomotion, motion matching, pose history, choosers, Pose Search databases, mirroring, warping and supported skeleton libraries prepared with **offline retargeting, without dynamic runtime retargeting**. |
 | Slides | Requested slope slide, automatic steep-slope slide and flat crouch slide, with entry, loop and exit animation. |
 | Ragdoll and recovery | Active ragdoll, knockdown, physical/motion-matched get-up and death-ragdoll integration. |
 | Physical reactions | PhysicsControl hit reactions without a full knockdown, plus injury-state strength changes. |

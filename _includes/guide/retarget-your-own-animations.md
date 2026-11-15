@@ -1,3 +1,5 @@
+**True offline retargeting — no dynamic runtime retargeting.** TA's animation import prepares assets for the target skeleton to play directly. The additional user-animation wizard below extends that approach to your own clips; it does not introduce a runtime retarget layer. See [full animation setup](#create-a-character-with-full-animations).
+
 **Planned setup · added to the release plan on 15 November 2026**
 
 Use GASP & Traverse Anywhere's retargeting work for animations you bring into your project, as well as the GASP library. The planned wizard step accepts **animation sequences or montages** and reuses the TA retargeter already prepared for a supported source/target skeleton pair.

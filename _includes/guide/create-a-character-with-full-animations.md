@@ -1,5 +1,19 @@
 Choose this route for a prepared motion-matching animation library and a generated pawn for your selected mesh.
 
+## True offline retargeting — no dynamic runtime retargeting
+
+GASP & Traverse Anywhere prepares **retargeted animation assets for your chosen supported skeleton** during import. The generated character uses that target-skeleton library directly in game. It does not depend on **Retarget Pose From Mesh** to convert another skeleton's live animation pose every frame.
+
+GASP's runtime character-retargeting workflow uses a source character to drive a different mesh dynamically; Epic's [GASP MetaHuman example](https://dev.epicgames.com/documentation/en-us/metahuman/runtime-retargeting#runtimeparentskeletalmeshretargetinginthegameanimationsampleproject) documents this approach. TA's generated setup instead prepares the assets for the target skeleton ahead of gameplay.
+
+| | GASP runtime character-retargeting workflow | GASP & Traverse Anywhere generated setup |
+| --- | --- | --- |
+| When retargeting happens | During gameplay, from the source mesh's current pose. | During offline asset preparation. |
+| What the target plays | A pose dynamically retargeted from another skeleton. | Animation assets prepared for its own skeleton. |
+| Runtime cross-skeleton retarget layer | Used to drive the target mesh. | Not required by the generated setup. |
+
+Motion matching, IK and motion warping still operate during gameplay; they are separate from dynamic cross-skeleton retargeting. Supported skeleton pairs and target-mesh checks still apply. Keeping an existing character's locomotion does not automatically remove any runtime retargeting you already use there.
+
 ## Choose one of four movement systems
 
 The **final setup plan** offers four dedicated choices: **Character Movement (CMC), GMC, Network Prediction Mover and Chaos Mover**. Choose the actual backend your game will use.

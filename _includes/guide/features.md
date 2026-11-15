@@ -5,7 +5,7 @@ Explore the traversal tools and the planned final feature set, then follow the s
 | Feature group | What you will find |
 | --- | --- |
 | Character setup | Guided fixes; keep existing locomotion or generate a full-animation character. |
-| Animation libraries | Offline retargeting, supported skeletons, motion matching, pose history and choosers. |
+| Animation libraries | **True offline retargeting: no dynamic runtime retargeting.** Target-skeleton animation assets, motion matching, pose history and choosers. |
 | Styles and traversal | Neutral/Relaxed styles, hurdles, vaults, mantles/climbs and motion warping. |
 | Contact and recovery | Hand goals, foot clearance and blending back to locomotion. |
 | Objects and proxies | Automatic object setup, fitted surfaces, filters, collision and rebuilding. |
@@ -17,6 +17,8 @@ Explore the traversal tools and the planned final feature set, then follow the s
 | Inspection and integration | Ledge diagnostics, custom queries and traversal events. |
 
 Feature pictures are illustrations, not exact gameplay frames or proof of release status. Original mesh renders include the blue Animan male. Proxy overlays are hidden in gameplay.
+
+**Direct animation on your chosen skeleton:** retargeting happens during asset preparation. The generated setup plays the resulting target-skeleton library directly, without a live cross-skeleton retarget layer. [Read about the setup](#create-a-character-with-full-animations).
 
 **CMC feature update:** the complete 22-case extras suite now passes, including all three fully animated slide types. [See what CMC adds](#cmc-extras).
 
