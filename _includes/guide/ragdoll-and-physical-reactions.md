@@ -10,7 +10,7 @@ Get-up selection uses the available face-up/face-down animations and pose histor
 
 Physical hit reactions can be enabled **without a full knockdown**. Injury-state strength changes control how strongly the body follows its animation, allowing different physical responses rather than forcing every hit into ragdoll.
 
-Connect reactions and injury changes to your game's damage/event logic. Traverse Anywhere's physical response does not define your game's health, damage balance or respawn rules.
+Connect reactions and injury changes to your game's damage/event logic. GASP & Traverse Anywhere's physical response does not define your game's health, damage balance or respawn rules.
 
 ## Death ragdolls
 
@@ -24,4 +24,4 @@ The intended first-person view follows the actual animated or physics-driven hea
 
 Test reactions both with and without knockdown, face-up and face-down recovery, death, interruptions and equipment attachments. Verify hands, knees and feet on each mesh and physics asset, then test owner/server/remote-player views under lag and packet loss. Skeleton compatibility alone does not prove physical contact on every body shape.
 
-[Release progress](#final-release-scope) distinguishes completed backend work from the remaining CMC and wizard qualification.
+[Release progress](#final-release-scope) distinguishes completed backend work from the remaining release integration and wizard work.

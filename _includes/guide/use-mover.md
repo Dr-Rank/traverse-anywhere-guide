@@ -13,7 +13,7 @@ The setup detects the pawn's backend and shows the relevant requirements. The su
 | Async physics | Apply the required physics and prediction settings. Follow any restart advice before multiplayer testing. |
 | Stable physics playback | Apply the row to support steady playback with uneven render frame times. It changes a project-wide setting, saves a backup and requires a restart. |
 | Physics step rate | Optional. Read the trade-off before choosing a rate; Fix all leaves it alone. |
-| Movement plugin | Enable Traverse Anywhere and restart if the integration is not loaded. |
+| Movement plugin | Enable GASP & Traverse Anywhere and restart if the integration is not loaded. |
 | Chaos startup input | Apply the supported backend fix. A custom backend may need manual integration to preserve its own behaviour. |
 
 Save before changing project-wide physics settings. If a row remains blocked after restart, read its reason: platform configuration or a higher-priority override can change the effective setting.
@@ -26,6 +26,6 @@ On remote Chaos pawns, the displayed mesh follows the traversal path and blends 
 
 ## Extras and network spectators
 
-Both Mover backends have completed their extras work in the 15 November handover: slides, ragdoll/recovery, physical reactions and paired interactions. The shared setup wizard and final packaging remain. Use each backend's own integration; NP modes cannot substitute for Chaos modes.
+Both Mover backends completed their earlier extras suites: slides, ragdoll/recovery, physical reactions and paired interactions. Chaos has also passed regression of the latest shared changes; the updated handover records an open NP first-person camera regression investigation. See [release progress](#final-release-scope). The shared setup wizard and final packaging remain. Use each backend's own integration; NP modes cannot substitute for Chaos modes.
 
 For NP multiplayer spectators, the integration provides **ATraversalGaspNPSpectatorPawn**. Use the supported NP spectator path: Network Prediction needs an appropriate locally controlled NP pawn to correct remote players. Test spectator views as well as active players.

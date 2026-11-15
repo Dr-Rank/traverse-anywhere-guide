@@ -1,10 +1,10 @@
 **Planned setup · added to the release plan on 15 November 2026**
 
-Use Traverse Anywhere's retargeting work for animations you bring into your project, as well as the GASP library. The planned wizard step accepts **animation sequences or montages** and reuses the TA retargeter already prepared for a supported source/target skeleton pair.
+Use GASP & Traverse Anywhere's retargeting work for animations you bring into your project, as well as the GASP library. The planned wizard step accepts **animation sequences or montages** and reuses the TA retargeter already prepared for a supported source/target skeleton pair.
 
 ## Planned workflow
 
-1. Set up the relevant skeleton pair through Traverse Anywhere's import process.
+1. Set up the relevant skeleton pair through GASP & Traverse Anywhere's import process.
 2. Select the source animations, including assets outside the GASP folders.
 3. Choose the source and target skeletons from the sets TA has already prepared.
 4. Choose a destination folder and run the offline batch.

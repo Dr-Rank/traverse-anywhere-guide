@@ -1,5 +1,7 @@
 **Final-release feature plan · CMC / GMC / Network Prediction Mover / Chaos Mover**
 
+**CMC now supports all three animated slide types in the qualified development build.** The audited GASP CMC character did not have a working slide setup; GASP & Traverse Anywhere adds native movement and the required animation selection. [Read the verified CMC update](#cmc-extras).
+
 Three slide behaviours are included in the plan. Choose the trigger model that fits your game; the movement system handles its own prediction and replay.
 
 | Slide type | Intended behaviour |
@@ -11,6 +13,8 @@ Three slide behaviours are included in the plan. Choose the trigger model that f
 ## Movement and animation
 
 The slide system is designed to retain approach momentum, follow the floor and feed its slope to the animation. Entry, loop and exit clips must match the selected style and stance. Releasing a requested slide should lead to the correct standing exit; holding crouch can lead to a crouched exit.
+
+CMC's animated slides are verified, but Mover-style body lean/alignment to the slope remains a separate item in the CMC slide plan.
 
 Slide thresholds, steering, braking and exit conditions must be tuned with the chosen backend. Do not assume identical stopping distance between CMC, GMC, Network Prediction Mover and Chaos Mover.
 

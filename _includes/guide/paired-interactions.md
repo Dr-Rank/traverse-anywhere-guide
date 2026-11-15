@@ -22,4 +22,4 @@ Use your own targeting, input and eligibility rules to decide when to request an
 
 Verify both characters from the server, owning clients and a remote observer. They should agree on the pairing and selected animation, then settle back into the intended gameplay state.
 
-NP and Chaos have completed the handover's paired/network case suites; CMC is still undergoing the equivalent qualification. The final setup wizard and packaged feature combinations remain part of the release work. See [release progress](#final-release-scope).
+CMC has now passed the complete 22-case suite, including paired and network interaction cases. GMC and Chaos passed the latest shared-change regressions. NP's earlier suite passed, but its latest shared-change regression is under investigation. The final setup wizard and packaged feature combinations remain part of the release work. See [release progress](#final-release-scope).

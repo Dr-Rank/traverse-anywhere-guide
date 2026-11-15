@@ -1,4 +1,4 @@
-**Final-release scope · updated 15 November 2026**
+**Final-release scope · updated from the latest 15 November 2026 handover**
 
 This guide covers the intended final version as well as established traversal setup. Sections marked **Planned setup** describe work still to be completed. They are not a claim that those controls are already present in your installed build.
 
@@ -21,12 +21,12 @@ This guide covers the intended final version as well as established traversal se
 
 | Movement system / work | Position in the 15 November handover |
 | --- | --- |
-| **CMC extras** | Code built and unit-tested in the lab. Pawn regeneration and live qualification are in progress; the complete CMC gameplay suite and carry into the product are not finished. |
-| **GMC extras** | Completed extras work and regression evidence carried forward. Final wizard integration and release packaging remain. |
-| **Network Prediction Mover extras** | Completed and carried; the 22-case suite and additional skeleton recovery/interaction checks passed. Final wizard integration and release packaging remain. |
-| **Chaos Mover extras** | Completed and carried, with the 22-case suite and additional skeleton checks. Final wizard integration and release packaging remain. |
+| **CMC extras** | **Complete 22-case extras suite passed**, including all three animated slides, ragdoll/recovery, injuries, paired interactions and camera/network cases. Additional skeleton checks, owner review and product carry remain. [CMC feature update](#cmc-extras). |
+| **GMC extras** | Completed extras work; the shared-change regression passed **14/14**. Final wizard integration and release packaging remain. |
+| **Network Prediction Mover extras** | Earlier 22-case and additional skeleton checks passed and were carried. Regression of the latest shared CMC-related changes is **under investigation** following a first-person camera failure in the running takedown; the latest handover records a diagnostic run, not a pass. |
+| **Chaos Mover extras** | Completed and carried, with additional skeleton checks. Regression of the latest shared changes passed **22/22**. Final wizard integration and release packaging remain. |
 
-The shared wizard, optional-feature generation/imports, user-animation retargeting, remaining Mover test failures and final packaging/documentation still need completion. Passing backend tests does not mean the complete buyer installation is release-qualified.
+CMC's complete extras gameplay suite is now qualified in the lab. The open NP regression, additional CMC skeleton coverage, review/product carry, shared wizard, optional-feature generation/imports, user-animation retargeting, remaining Mover test failures and final packaging/documentation still need completion. Passing backend tests does not mean the complete buyer installation is release-qualified.
 
 ## Broader GASP coverage still being reconciled
 

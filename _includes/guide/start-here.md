@@ -1,8 +1,14 @@
-Prepare your character, then right-click a static mesh and choose **Make Traversable**. Traverse Anywhere creates the Blueprint, adds traversal and generates its proxies for you. Drag the new Blueprint into your level and try it.
+**GASP & Traverse Anywhere** brings together character animation, traversal and physical interaction.
+
+**First or Third Person. Your Choice of Supported Skeleton.**
+
+Choose **CMC, GMC, Network Prediction Mover or Chaos Mover**. Existing documentation and the editor may still use the shorter name **Traverse Anywhere**.
+
+Prepare your character, then right-click a static mesh and choose **Make Traversable**. GASP & Traverse Anywhere creates the Blueprint, adds traversal and generates its proxies for you. Drag the new Blueprint into your level and try it.
 
 This guide takes you through installation, character setup, animations, objects, proxy settings and everyday troubleshooting. You can use your existing character's locomotion or prepare a full animation library for a new character.
 
-**Four movement choices:** CMC, GMC, Network Prediction Mover and Chaos Mover. Start with [Choose your movement system](#choose-your-movement-system). **GMC is a paid third-party product: purchase, install and enable it separately to use the GMC route. It is not included with Traverse Anywhere.**
+**Four movement choices:** CMC, GMC, Network Prediction Mover and Chaos Mover. Start with [Choose your movement system](#choose-your-movement-system). **GMC is a paid third-party product: purchase, install and enable it separately to use the GMC route. It is not included with GASP & Traverse Anywhere.**
 
 This edition also covers the planned final-release extras and user-animation retargeting. [Release scope and progress](#final-release-scope) identifies the remaining setup and qualification work.
 
@@ -12,7 +18,9 @@ This edition also covers the planned final-release extras and user-animation ret
 
 ## Install and open the plugin
 
-1. Install the Traverse Anywhere version that matches your Unreal Engine version. For a supplied project package, place its **Traversal** folder inside your project's **Plugins** folder.
+Current plugin/editor entries still use **Traverse Anywhere**; the steps below retain those labels.
+
+1. Install the GASP & Traverse Anywhere version that matches your Unreal Engine version. For a supplied project package, place its **Traversal** folder inside your project's **Plugins** folder.
 
 2. Open **Edit > Plugins**, enable **Traverse Anywhere** and restart Unreal when requested. Use one copy of the plugin.
 

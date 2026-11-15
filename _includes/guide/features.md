@@ -1,6 +1,6 @@
 Explore the traversal tools and the planned final feature set, then follow the setup route for your project. **CMC, GMC, Network Prediction Mover and Chaos Mover** are all first-class movement choices.
 
-<div class="notice dependency"><strong>Using GMC?</strong> GMC is a paid third-party product, sold separately. Purchase, install and enable a compatible GMC version before using Traverse Anywhere's GMC integration. It is not included with Traverse Anywhere.</div>
+<div class="notice dependency"><strong>Using GMC?</strong> GMC is a paid third-party product, sold separately. Purchase, install and enable a compatible GMC version before using GASP & Traverse Anywhere's GMC integration. It is not included with GASP & Traverse Anywhere.</div>
 
 | Feature group | What you will find |
 | --- | --- |
@@ -18,4 +18,6 @@ Explore the traversal tools and the planned final feature set, then follow the s
 
 Feature pictures are illustrations, not exact gameplay frames or proof of release status. Original mesh renders include the blue Animan male. Proxy overlays are hidden in gameplay.
 
-The extras, four-choice wizard and user-animation retargeting have remaining release work. See the [final-release scope and progress](#final-release-scope). Imports use your separately obtained Unreal Engine 5.8 Game Animation Sample project.
+**CMC feature update:** the complete 22-case extras suite now passes, including all three fully animated slide types. [See what CMC adds](#cmc-extras).
+
+The shared four-choice wizard, user-animation retargeting and final release integration still have remaining work. See the [final-release scope and progress](#final-release-scope). Imports use your separately obtained Unreal Engine 5.8 Game Animation Sample project.

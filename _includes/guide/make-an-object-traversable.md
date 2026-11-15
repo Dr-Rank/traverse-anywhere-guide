@@ -4,7 +4,7 @@
 
 2. Right-click it and choose **Make Traversable**.
 
-3. Traverse Anywhere creates a Blueprint with the mesh as its root, adds the **Traversable** component and **generates proxies automatically**. Fitted pawn collision is enabled for this new Blueprint.
+3. GASP & Traverse Anywhere creates a Blueprint with the mesh as its root, adds the **Traversable** component and **generates proxies automatically**. Fitted pawn collision is enabled for this new Blueprint.
 
 4. The Content Browser goes to and highlights the new Blueprint in **Content/TraverseAnywhere/TraversableObjects**. Drag that Blueprint into your level.
 

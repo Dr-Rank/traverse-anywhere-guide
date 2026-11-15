@@ -1,6 +1,6 @@
-**GMC is one of Traverse Anywhere's four primary movement routes**, alongside CMC, Network Prediction Mover and Chaos Mover. The final plan includes full-animation setup, traversal, optional extras and first-person presentation for GMC.
+**GMC is one of GASP & Traverse Anywhere's four primary movement routes**, alongside CMC, Network Prediction Mover and Chaos Mover. The final plan includes full-animation setup, traversal, optional extras and first-person presentation for GMC.
 
-<div class="notice dependency"><strong>Separate paid product required.</strong> General Movement Component (GMC) is a paid third-party product. You must purchase a compatible GMC version and install and enable it to use Traverse Anywhere with GMC. A Traverse Anywhere purchase does not include GMC or replace that purchase. Installing GMCMotion alone does not supply GMC.</div>
+<div class="notice dependency"><strong>Separate paid product required.</strong> General Movement Component (GMC) is a paid third-party product. You must purchase a compatible GMC version and install and enable it to use GASP & Traverse Anywhere with GMC. A GASP & Traverse Anywhere purchase does not include GMC or replace that purchase. Installing GMCMotion alone does not supply GMC.</div>
 
 ## Install the prerequisites
 
@@ -10,7 +10,7 @@
 
 3. Install [GMCAbilitySystem (GMAS), clear-fixes branch](https://github.com/Dr-Rank/DeepWorlds_GMCAbilitySystem/tree/clear-fixes). GMAS is required by this integration; using its gameplay abilities in your game is optional.
 
-4. Enable GMC, GMCMotion, GMAS and Traverse Anywhere. Rebuild for the matching engine where required, then restart Unreal. Choose **GMC** in setup and resolve the prerequisite results. A folder alone is not enough: the required plugins must be valid, enabled and loaded.
+4. Enable GMC, GMCMotion, GMAS and GASP & Traverse Anywhere. Rebuild for the matching engine where required, then restart Unreal. Choose **GMC** in setup and resolve the prerequisite results. A folder alone is not enough: the required plugins must be valid, enabled and loaded.
 
 ## Planned feature setup
 

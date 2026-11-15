@@ -1,4 +1,4 @@
-# Traverse Anywhere user guide
+# GASP & Traverse Anywhere user guide
 
 **Read the illustrated guide:** https://dr-rank.github.io/traverse-anywhere-guide/
 
@@ -24,3 +24,9 @@ The guide presents CMC, GMC, Network Prediction Mover and Chaos Mover as four pr
 New chapters cover the final-release scope/status, optional-feature wizard, three slide behaviours, ragdoll/get-up/death and physical reactions, paired interactions, and planned retargeting of users' own animations. Planned setup is distinguished from completed backend qualification.
 
 Content was reconciled against the 15 November CMC handover, 14 November NP handover, 18 October extras plan (including the 15 November retargeting addition), backend-neutral extras plan and GASP feature inventory. Broader GASP inventory items remain explicitly pending where the handover does not establish complete integration. These are internal source documents; the public guide does not distribute them or the product code.
+
+## Expanded name and CMC support
+
+Brand: **GASP & Traverse Anywhere**. Tagline: **First or Third Person. Your Choice of Supported Skeleton.** The logo is in `assets/images/gasp-traverse-anywhere-logo.png`; the original logo remains available for historical reference. The existing repository URL and editor labels are retained.
+
+CMC status was reconciled with the updated 15 November handover: run 7351 passed all 22 cases without the long-frame allowance, including all three animated slides. The guide records the passing GMC/Chaos shared-change regressions and the open NP regression separately from wizard, skeleton and packaging work.
