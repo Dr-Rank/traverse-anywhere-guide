@@ -15,4 +15,10 @@ You do not need to build these pieces by hand when the setup can fix them. This 
 | Foot clearance against obstacles | Helps keep the legs clear of supported obstacle collision. |
 | GASP level blocks | Adds the Traversable component to recognized sample level-block Blueprints already in your project. |
 
-Extra Mover rows are explained under **Use Mover**. A row can give manual guidance when your Blueprint differs from the supported automatic setup.
+Movement-specific requirements are explained under [Choose your movement system](#choose-your-movement-system), [GMC setup](#prepare-a-gmc-project) and [Use Mover](#use-mover). A row can give manual guidance when your Blueprint differs from the supported automatic setup.
+
+## Planned optional-feature checks
+
+The final wizard is also planned to check the selected extras adapter, physics bodies/control profile, Ragdoll collision, Obstacle channel/preset, gameplay tags, feature animations, animation states and input bindings. Missing physics bodies are offered as an **optional** generation step.
+
+GMC prerequisite checks require the separately purchased GMC product plus GMCMotion and GMAS; the other backends do not inherit those dependencies. See [Optional GASP features](#optional-gasp-features) for the planned flow.

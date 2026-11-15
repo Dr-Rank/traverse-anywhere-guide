@@ -22,3 +22,7 @@ For unusual shapes, use the component's ledge controls: **Min Ledge Width**, **M
 For inspection, enable **Show Height Label** on the Traversable component to display its estimated climb height. **Draw Debug Traces** shows the ledge probes in the editor. These tools help explain a rejected surface; the pawn still makes the final traversal decision.
 
 Prefer uniform scale on placed instances. For a changed shape or non-uniform scale, set the desired root scale in the Blueprint and rebuild there. Parent and child Blueprints with conflicting inherited proxy sets cannot be rebuilt independently.
+
+## Planned display and surface refinements
+
+The release follow-ups include placing height markers above the measured mesh and turning their values toward the camera. Proxy fitting is also intended to follow lower edges or split surfaces by height so raised corners do not leave a proxy above the real surface beneath it. Check these visually in your installed build; the extras handover does not establish completion of these follow-ups.

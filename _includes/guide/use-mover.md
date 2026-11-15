@@ -1,3 +1,7 @@
+## Two distinct Mover choices
+
+**Network Prediction Mover** and **Chaos Mover** are separate first-class routes alongside **CMC** and **GMC**. The final wizard is planned to expose both as dedicated full-animation choices, with the same optional-feature goals. Neither requires the paid GMC product.
+
 ## Select the actual pawn
 
 The setup detects the pawn's backend and shows the relevant requirements. The supplied plugin contains the Mover integrations; enable **Traverse Anywhere** rather than installing extra older adapter plugins.
@@ -19,3 +23,9 @@ Save before changing project-wide physics settings. If a row remains blocked aft
 Check approach, traversal and stopping with the frame rates you expect players to use. Test multiplayer views as well as the owning player. A custom Chaos pawn may need its normal braking settings tuned for a comfortable stop.
 
 On remote Chaos pawns, the displayed mesh follows the traversal path and blends back to the corrected capsule. Gameplay collision still uses the capsule. Keep damage, overlaps and other gameplay checks tied to the intended collision representation.
+
+## Extras and network spectators
+
+Both Mover backends have completed their extras work in the 15 November handover: slides, ragdoll/recovery, physical reactions and paired interactions. The shared setup wizard and final packaging remain. Use each backend's own integration; NP modes cannot substitute for Chaos modes.
+
+For NP multiplayer spectators, the integration provides **ATraversalGaspNPSpectatorPawn**. Use the supported NP spectator path: Network Prediction needs an appropriate locally controlled NP pawn to correct remote players. Test spectator views as well as active players.

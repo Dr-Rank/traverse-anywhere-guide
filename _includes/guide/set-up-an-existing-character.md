@@ -2,7 +2,11 @@
 
 In the setup window, select the **pawn Blueprint** your game uses. Check that it has the intended skeletal mesh and Animation Blueprint. Traverse Anywhere checks the pawn's movement system and shows the rows relevant to it.
 
-Use this route to add traversal while keeping your current walking, running and idle animations. Supported movement routes include **Character Movement (CMC)**, **Network Prediction Mover** and **Chaos Mover**. Mover is an experimental Unreal Engine system.
+Use this route to add traversal while keeping your current walking, running and idle animations. The four movement routes are **Character Movement (CMC)**, **GMC**, **Network Prediction Mover** and **Chaos Mover**. Mover is an experimental Unreal Engine system.
+
+**GMC requires a separately purchased and installed paid GMC plugin**, plus compatible GMCMotion and GMAS. Complete [GMC prerequisites](#prepare-a-gmc-project) before using that route. See [release progress](#final-release-scope) for final wizard and qualification work.
+
+Keeping your locomotion does not automatically add the full GASP extras. Their planned generated-pawn setup is covered under [Optional GASP features](#optional-gasp-features); a custom pawn also needs the matching adapter, animation, physics and input integration.
 
 ## Read the setup results
 

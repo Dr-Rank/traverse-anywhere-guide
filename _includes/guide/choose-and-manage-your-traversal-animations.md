@@ -25,3 +25,7 @@ The generated chooser selects among the imported traversal montages. To change i
 ## Check the result
 
 Try both walking and running approaches. Watch hands during their contact with the ledge, feet during landing, and the return to locomotion. The maximum climb height has increased from **250 cm to 300 cm**. The current grounded climb chooser supports heights up to **300 cm**; usable depth, headroom and available animations also matter.
+
+## Beyond traversal clips
+
+[Full animation setup](#create-a-character-with-full-animations) prepares locomotion and supporting animation data for your selected movement system. The planned optional extras add slide, recovery and paired-interaction assets. You will also be able to [retarget your own sequences or montages](#retarget-your-own-animations) through an existing TA retargeter for the selected skeleton pair. All of these retargeting paths are offline.

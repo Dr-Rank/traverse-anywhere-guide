@@ -1,19 +1,21 @@
-Explore what Traverse Anywhere can add to your project, then follow the setup instructions that come after this section.
+Explore the traversal tools and the planned final feature set, then follow the setup route for your project. **CMC, GMC, Network Prediction Mover and Chaos Mover** are all first-class movement choices.
 
-Feature pictures illustrate the tools rather than showing exact gameplay frames. The supported-character picture uses renders of the original meshes, including the blue Animan male. Proxy overlays are hidden in gameplay.
+<div class="notice dependency"><strong>Using GMC?</strong> GMC is a paid third-party product, sold separately. Purchase, install and enable a compatible GMC version before using Traverse Anywhere's GMC integration. It is not included with Traverse Anywhere.</div>
 
 | Feature group | What you will find |
 | --- | --- |
-| Character setup | Guided fixes and traversal with your existing locomotion |
-| Animation libraries | Full animation preparation and libraries for supported skeletons |
-| Styles and action selection | Neutral and Relaxed styles, pose selection and motion warping |
-| Contact and locomotion recovery | Hand goals, foot clearance and blending back to locomotion |
-| Objects and proxies | Automatic object setup, fitted surfaces, filters, collision and rebuilding |
-| Movement and multiplayer | CMC and Mover support, replicated traversal playback |
-| Inspection and integration | Ledge diagnostics, custom queries and traversal events |
+| Character setup | Guided fixes; keep existing locomotion or generate a full-animation character. |
+| Animation libraries | Offline retargeting, supported skeletons, motion matching, pose history and choosers. |
+| Styles and traversal | Neutral/Relaxed styles, hurdles, vaults, mantles/climbs and motion warping. |
+| Contact and recovery | Hand goals, foot clearance and blending back to locomotion. |
+| Objects and proxies | Automatic object setup, fitted surfaces, filters, collision and rebuilding. |
+| Movement and multiplayer | **CMC / GMC / Network Prediction Mover / Chaos Mover**, each with native integration. |
+| Optional physical features | Three slide types, ragdoll, knockdown/get-up, death ragdolls, hit reactions and injuries. |
+| Paired interactions | Shove, tackle and takedown with participant coordination. |
+| First-person presentation | Body/world-mesh views, head following through physical motion and configurable look limits. |
+| Your own animations | Planned sequence/montage retargeting through existing TA skeleton-pair retargeters. |
+| Inspection and integration | Ledge diagnostics, custom queries and traversal events. |
 
-## Choose the route that suits your project
+Feature pictures are illustrations, not exact gameplay frames or proof of release status. Original mesh renders include the blue Animan male. Proxy overlays are hidden in gameplay.
 
-Keep your current character and locomotion with the existing-pawn setup, or prepare a full animation library for a generated character. Both routes use the same traversable-object tools.
-
-Animation imports use your separately obtained Unreal Engine 5.8 Game Animation Sample project. Back up your project before applying setup or installing an animation library.
+The extras, four-choice wizard and user-animation retargeting have remaining release work. See the [final-release scope and progress](#final-release-scope). Imports use your separately obtained Unreal Engine 5.8 Game Animation Sample project.

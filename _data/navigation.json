@@ -8,6 +8,14 @@
     "url": "/#start-here"
   },
   {
+    "title": "Choose your movement system",
+    "url": "/#choose-your-movement-system"
+  },
+  {
+    "title": "Final-release scope and progress",
+    "url": "/#final-release-scope"
+  },
+  {
     "title": "Features",
     "url": "/#features"
   },
@@ -28,6 +36,26 @@
     "url": "/#create-a-character-with-full-animations"
   },
   {
+    "title": "Optional GASP features",
+    "url": "/#optional-gasp-features"
+  },
+  {
+    "title": "Slides",
+    "url": "/#slides"
+  },
+  {
+    "title": "Ragdoll and physical reactions",
+    "url": "/#ragdoll-and-physical-reactions"
+  },
+  {
+    "title": "Paired interactions",
+    "url": "/#paired-interactions"
+  },
+  {
+    "title": "Retarget your own animations",
+    "url": "/#retarget-your-own-animations"
+  },
+  {
     "title": "Make an object traversable",
     "url": "/#make-an-object-traversable"
   },
@@ -36,11 +64,11 @@
     "url": "/#adjust-proxies-and-ledges"
   },
   {
-    "title": "Use Mover",
+    "title": "Use NP Mover or Chaos Mover",
     "url": "/#use-mover"
   },
   {
-    "title": "Prepare a GMC project",
+    "title": "Use GMC · paid dependency",
     "url": "/#prepare-a-gmc-project"
   },
   {

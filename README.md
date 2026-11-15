@@ -2,7 +2,7 @@
 
 **Read the illustrated guide:** https://dr-rank.github.io/traverse-anywhere-guide/
 
-The complete guide is on one continuous page, following the 24-page PDF layout: cover, setup introduction, grouped feature pictures with captions, and practical instructions.
+The complete guide is on one continuous page, using a printable, illustrated layout: cover, movement choices, final-release scope, grouped feature pictures, practical setup and planned extras.
 
 ## Update the guide
 
@@ -16,3 +16,11 @@ The complete guide is on one continuous page, following the 24-page PDF layout: 
 Old chapter links redirect to the matching section of the complete guide. The additional property reference remains at `property-reference.html`.
 
 This repository contains documentation and illustrative media only. It does not distribute the plugin, Game Animation Sample, private test geometry or project assets. Product and character names remain the property of their respective owners.
+
+## Release scope update — 15 November 2026
+
+The guide presents CMC, GMC, Network Prediction Mover and Chaos Mover as four primary choices. GMC is a separately purchased, installed and enabled paid dependency, with GMCMotion and GMAS also required for its integration.
+
+New chapters cover the final-release scope/status, optional-feature wizard, three slide behaviours, ragdoll/get-up/death and physical reactions, paired interactions, and planned retargeting of users' own animations. Planned setup is distinguished from completed backend qualification.
+
+Content was reconciled against the 15 November CMC handover, 14 November NP handover, 18 October extras plan (including the 15 November retargeting addition), backend-neutral extras plan and GASP feature inventory. Broader GASP inventory items remain explicitly pending where the handover does not establish complete integration. These are internal source documents; the public guide does not distribute them or the product code.
