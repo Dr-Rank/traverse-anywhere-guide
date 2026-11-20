@@ -18,7 +18,7 @@ Use a simple block in a clear level. Try walking, running and sprinting approach
 | **What you see** | **What to check** |
 | --- | --- |
 | GMC unavailable | Purchase and install the paid GMC plugin separately; enable compatible GMC, GMCMotion and GMAS, then rebuild/restart as required. GMCMotion alone does not provide GMC. |
-| An optional feature is missing from setup | Check your build against [release progress](#final-release-scope). The final four-choice wizard and extras controls are still planned work. |
+| An optional feature is missing from setup | The [guided setup](#use-the-setup-wizard) records extras as a plan; a selected extra is not installed until you apply it. Check your build against [release progress](#final-release-scope). |
 | Slide does not start or ends in the wrong stance | Check the selected trigger, slope/speed thresholds, crouch input, backend adapter and slide animation states. Compare owner and remote views. |
 | Ragdoll or get-up fails | Check physics bodies, the mapped PhysicsControl profile, recovery animations, pose history and animation-state wiring. |
 | A paired action is refused | Check both participants, their supported adapters, eligibility and paired-animation dependencies. |

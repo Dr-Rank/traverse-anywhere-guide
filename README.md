@@ -30,3 +30,7 @@ Content was reconciled against the 15 November CMC handover, 14 November NP hand
 Brand: **GASP & Traverse Anywhere**. Tagline: **First or Third Person. Your Choice of Supported Skeleton.** The logo is in `assets/images/gasp-traverse-anywhere-logo.png`; the original logo remains available for historical reference. The existing repository URL and editor labels are retained.
 
 CMC status was reconciled with the updated 15 November handover: run 7351 passed all 22 cases without the long-frame allowance, including all three animated slides. The guide records the passing GMC/Chaos shared-change regressions and the open NP regression separately from wizard, skeleton and packaging work.
+
+## Setup wizard chapter — 20 November 2026
+
+New **Use the setup wizard** chapter (`_includes/guide/use-the-setup-wizard.md`) and three **Setup wizard screens** sheets: the setup window, all seven guided steps, the new-pawn route with its four movement choices, the locomotion guard message, an extras selection, the review page and the plan returned to the setup window. Screens are actual Unreal Editor captures of the current build, using Manny (`SKM_Manny_Simple` on `SK_Mannequin`) on a CMC pawn; the images are `assets/images/wizard-*.webp`. Portrait screens use the `.shots` grid in `assets/style.css` (two columns, one on phones). Text follows the wizard's own on-screen wording, including the save reminder shown after Fix or Fix all.
