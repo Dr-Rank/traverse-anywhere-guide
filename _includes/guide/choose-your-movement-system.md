@@ -4,10 +4,10 @@ GASP & Traverse Anywhere gives **Character Movement (CMC), GMC, Network Predicti
 
 | Movement system | Choose it for | Plugins and requirements |
 | --- | --- | --- |
-| **Character Movement (CMC)** | Unreal's standard Character movement. **The simplest choice if you are unsure.** | `Traversal`, plus `TraversalGaspExtras` and `TraversalCMCExtras` for the extras. |
-| **GMC** | A project built around General Movement Component | The separately purchased **GMC**, plus **GMCMotion** and **GMCAbilitySystem (GMAS)**; `TraversalGMC` and `TraversalGMCExtras`. See [GMC setup](#prepare-a-gmc-project). |
-| **Network Prediction Mover** | A Mover pawn using Network Prediction | The engine's Mover and Network Prediction; `TraversalMover`, plus `TraversalGaspExtras` and `TraversalMoverExtras` for the extras. |
-| **Chaos Mover** | A Mover pawn using Chaos physics | The engine's Mover and Chaos Mover; `TraversalMover`, `TraversalMoverChaos` and `TraversalGaspExtras` (Chaos Mover's extras are built into `TraversalMoverChaos`). Setup also applies the physics settings it needs. |
+| **Character Movement (CMC)** | Unreal's standard Character movement. **The simplest choice if you are unsure.** | `Traversal` and `TraversalGaspExtras`. Nothing else. |
+| **GMC** | A project built around General Movement Component | The separately purchased **GMC**, plus **GMCMotion** and **GMCAbilitySystem (GMAS)**; `Traversal`, `TraversalGaspExtras` and `TraversalGMC`. See [GMC setup](#prepare-a-gmc-project). |
+| **Network Prediction Mover** | A Mover pawn using Network Prediction | The engine's Mover and Network Prediction; `Traversal`, `TraversalGaspExtras` and `TraversalMover`. |
+| **Chaos Mover** | A Mover pawn using Chaos physics | The engine's Mover and Chaos Mover; `Traversal`, `TraversalGaspExtras`, `TraversalMover` and `TraversalMoverChaos`. Setup also applies the physics settings it needs. |
 
 **Network Prediction Mover and Chaos Mover are separate choices.** Their movement, prediction and physics requirements differ, and choosing one does not install the other as a fallback. Mover is still marked experimental by Epic in Unreal Engine 5.8.
 

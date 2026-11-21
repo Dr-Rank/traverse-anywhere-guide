@@ -16,24 +16,23 @@ Prepare your character, then right-click a static mesh and choose **Make Travers
 
 ## Install
 
-1. Use Unreal Engine **5.8** with its C++ toolchain (Visual Studio 2022). The plugins are source plugins and compile into your project.
+1. Use Unreal Engine **5.8** (tested on 5.8.4) with its C++ toolchain (Visual Studio 2022). The plugins are source plugins and compile into your project.
 
-2. Copy the plugin folders you need into your project's **Plugins** folder. Always include **Traversal**; add the others for the movement system and extras you use:
+2. Copy the plugins into your project's **Plugins** folder. There are five, all listed under one **Traverse Anywhere** category in **Edit > Plugins**. **Always copy `Traversal` and `TraversalGaspExtras`**, then add the plugin for your movement system:
 
-   | Plugin folder | What it adds | When you need it |
-   | --- | --- | --- |
-   | `Traversal` | Traversable objects, ledge detection, the setup window and wizard, GASP import, first-person presentation | Always |
-   | `TraversalGaspExtras` | Ragdoll, get-up, hit reactions, injuries and paired interactions shared by every backend | For the extras |
-   | `TraversalCMCExtras` | Character Movement support for the extras, including slides | CMC with extras |
-   | `TraversalMover` | Network Prediction Mover | NP Mover |
-   | `TraversalMoverChaos` | Chaos Mover, including its extras. Also needs `TraversalMover` and `TraversalGaspExtras` | Chaos Mover |
-   | `TraversalMoverExtras` | Network Prediction Mover support for the extras | NP Mover with extras |
-   | `TraversalGMC` | General Movement Component | GMC (paid, separate) |
-   | `TraversalGMCExtras` | GMC support for the extras | GMC with extras |
+   | Plugin folder | Name in Edit > Plugins | What it adds | When you need it |
+   | --- | --- | --- | --- |
+   | `Traversal` | GASP & Traverse Anywhere | Traversable objects, ledge detection, traversal for Character Movement (CMC), the setup window and wizard, GASP import, first-person presentation | Always |
+   | `TraversalGaspExtras` | Traverse Anywhere - GASP Extras | Ragdoll and get-up, hit reactions, injuries, paired interactions and slides, shared by every movement system, with Character Movement support built in | Always (Mover and GMC need it even without extras) |
+   | `TraversalMover` | Traverse Anywhere - Mover | Network Prediction Mover, including its extras | NP Mover, and Chaos Mover |
+   | `TraversalMoverChaos` | Traverse Anywhere - Chaos Mover | Chaos Mover, including its extras | Chaos Mover (with `TraversalMover`) |
+   | `TraversalGMC` | Traverse Anywhere - GMC | General Movement Component, including its extras | GMC only: see below |
 
-   Keep **one copy** of each plugin. Never leave a second copy elsewhere in the project or in the engine.
+   **CMC** needs only the first two. **NP Mover** adds `TraversalMover`; **Chaos Mover** adds `TraversalMover` and `TraversalMoverChaos`. Copying all of the tester download's `Plugins` folder is fine. Keep **one copy** of each plugin. Never leave a second copy elsewhere in the project or in the engine.
 
-   <div class="notice dependency"><strong>Copy the GMC plugins only if your project has GMC.</strong> <code>TraversalGMC</code> and <code>TraversalGMCExtras</code> (kept in <code>OptionalPlugins/GMC</code> in the tester download) cannot compile without GMC, GMCMotion and GMAS. A Blueprint-only project compiles <strong>every</strong> plugin in its Plugins folder, enabled or not, so a GMC plugin without GMC stops the whole project building with <em>Could not find definition for module 'GMCMotion'</em>.</div>
+   <div class="notice dependency"><strong>Copy the GMC plugin only if your project has GMC.</strong> <code>TraversalGMC</code> (kept in <code>OptionalPlugins/GMC</code> in the tester download) cannot compile without GMC, GMCMotion and GMAS. A Blueprint-only project compiles <strong>every</strong> plugin in its Plugins folder, enabled or not, so the GMC plugin without GMC stops the whole project building with <em>Could not find definition for module 'GMCMotion'</em>.</div>
+
+   **Updating from an earlier tester build?** The old `TraversalCMCExtras`, `TraversalMoverExtras` and `TraversalGMCExtras` folders are now part of the plugins above. Delete those three folders from your project's Plugins folder before copying the new ones. If Unreal then says one of them cannot be found, choose to disable it: its contents are now in `TraversalGaspExtras`, `TraversalMover` or `TraversalGMC`.
 
 3. Open the project and let it compile. Under **Edit > Plugins**, check that **GASP & Traverse Anywhere** and the backend plugins you copied are enabled, then restart if Unreal asks.
 
