@@ -10,7 +10,7 @@
 
 3. Install [GMCAbilitySystem (GMAS), clear-fixes branch](https://github.com/Dr-Rank/DeepWorlds_GMCAbilitySystem/tree/clear-fixes). The integration requires GMAS; using its gameplay abilities in your own game is optional.
 
-4. Copy `Traversal`, `TraversalGaspExtras` and `TraversalGMC` into your Plugins folder. `TraversalGMC` includes the GMC extras. In the tester download it is in `OptionalPlugins/GMC`, kept apart so that projects without GMC still compile.
+4. Copy `Traversal`, `TraversalGaspExtras` and `TraversalGMC` into your Plugins folder. `TraversalGMC` includes the GMC extras. In the tester download it is in `OptionalPlugins/GMC`, kept apart so that projects without GMC still compile: copy it into your project's **Plugins** folder (`YourProject/Plugins/TraversalGMC`). Unreal only finds plugins inside Plugins, so an `OptionalPlugins` folder in your project is ignored.
 
 5. Enable GMC, GMCMotion, GMAS and the GASP & Traverse Anywhere plugins, rebuild, then restart Unreal.
 
