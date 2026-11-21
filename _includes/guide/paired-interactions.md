@@ -16,6 +16,8 @@ The plugin picks an eligible partner in front of the initiator (within 2 m, 50 c
 
 Interactions are tested between two pawns **of the same movement system**. Mixed pairings, such as CMC against GMC, are not established.
 
+The two characters are placed as GASP authored the pair, for characters of GASP's size. Pairs of similar build make contact much as GASP's do. On noticeably smaller characters, such as the UE4 female mannequin, a pushing or grabbing hand can stop several centimetres short of the partner (5 cm typical, up to about 16 cm in this build's measurements), and characters of different sizes meet less exactly. Check the interactions with the characters you ship.
+
 ## Connect your game's rules
 
 Trigger an interaction from input with **Request Interaction**, or from server code with **Try Interaction**. Your game decides when it is allowed (targeting, teams, cooldowns) and what it means for health and death. Check refusal when no partner is available or the partner is busy, interruption, completion and return of control. See the [Blueprint reference](#blueprint-reference).
