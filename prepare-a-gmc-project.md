@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title: "Prepare a GMC project"
+title: "Use GMC (paid dependency)"
 permalink: /prepare-a-gmc-project.html
 target: /#prepare-a-gmc-project
 ---

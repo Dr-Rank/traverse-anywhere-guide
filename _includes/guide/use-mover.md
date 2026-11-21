@@ -1,31 +1,42 @@
-## Two distinct Mover choices
+## Two separate Mover choices
 
-**Network Prediction Mover** and **Chaos Mover** are separate first-class routes alongside **CMC** and **GMC**. The final wizard is planned to expose both as dedicated full-animation choices, with the same optional-feature goals. Neither requires the paid GMC product.
+**Network Prediction Mover** and **Chaos Mover** are separate first-class routes alongside **CMC** and **GMC**. Both are offered in the wizard and in Full animation setup, with the same extras. Neither needs the paid GMC product.
+
+Copy `TraversalMover` (Network Prediction) or `TraversalMoverChaos` (Chaos), and `TraversalMoverExtras` if you want the extras. Do not install older separate adapter plugins alongside them.
+
+## Try the engine's example pawns
+
+The engine's **Mover Examples** plugin includes `AnimatedMannyPawn` (Network Prediction) and `ChaosMannyPawn` (Chaos) in `/MoverExamples/Pawns`. They are engine content, so setup copies one into your project before changing it. See [Copy an engine pawn into your project](#copy-into-project).
 
 ## Select the actual pawn
 
-The setup detects the pawn's backend and shows the relevant requirements. The supplied plugin contains the Mover integrations; enable **Traverse Anywhere** rather than installing extra older adapter plugins.
+Setup detects the pawn's backend and shows the rows that backend needs.
 
-## Chaos setup rows
+## Chaos Mover rows
 
 | **Row** | **What to do** |
 | --- | --- |
 | Async physics | Apply the required physics and prediction settings. Follow any restart advice before multiplayer testing. |
-| Stable physics playback | Apply the row to support steady playback with uneven render frame times. It changes a project-wide setting, saves a backup and requires a restart. |
-| Physics step rate | Optional. Read the trade-off before choosing a rate; Fix all leaves it alone. |
-| Movement plugin | Enable GASP & Traverse Anywhere and restart if the integration is not loaded. |
-| Chaos startup input | Apply the supported backend fix. A custom backend may need manual integration to preserve its own behaviour. |
+| Stable physics playback | Supports steady playback with uneven frame times. It changes a project-wide setting, saves a backup and needs a restart. |
+| Physics step rate | **Optional.** Read the trade-off before choosing a rate. Apply required changes leaves it alone. |
+| Mesh tick group | **Optional.** Ticking the mesh after physics makes Chaos Mover's animation order match Network Prediction's. The row explains the cost. |
+| Movement plugin | Enable the Chaos Mover integration and restart if it is not loaded. |
+| Chaos startup input | Apply the supported backend fix. A custom backend may need a manual connection to keep its own behaviour. |
 
-Save before changing project-wide physics settings. If a row remains blocked after restart, read its reason: platform configuration or a higher-priority override can change the effective setting.
+Save before changing project-wide physics settings. If a row stays blocked after a restart, read its reason: a platform configuration or a higher-priority override can change the effective setting.
+
+## Network Prediction Mover rows
+
+**NP fixed tick rate:** Network Prediction's fixed tick rate should divide 1000 exactly (for example 50, 100 or 125 Hz). Other rates run every Network Prediction simulation slightly slow; 60 Hz runs 4% slow. The row reports the actual slowdown and offers the change.
 
 ## Test in your game
 
-Check approach, traversal and stopping with the frame rates you expect players to use. Test multiplayer views as well as the owning player. A custom Chaos pawn may need its normal braking settings tuned for a comfortable stop.
+Check approach, traversal and stopping at the frame rates you expect players to use. Test other players' views as well as the owning player. A custom Chaos pawn may need its braking tuned for a comfortable stop.
 
-On remote Chaos pawns, the displayed mesh follows the traversal path and blends back to the corrected capsule. Gameplay collision still uses the capsule. Keep damage, overlaps and other gameplay checks tied to the intended collision representation.
+On remote Chaos pawns, the displayed mesh follows the traversal path and blends back to the corrected capsule. Gameplay collision still uses the capsule, so keep damage, overlaps and other gameplay checks on the intended collision.
 
-## Extras and network spectators
+**Chaos press distance:** on a networked Chaos pawn, a traversal press from too far away for the pawn to brake in time is refused before braking, and the press stays a normal jump. Press closer to the obstacle.
 
-Both Mover backends completed their earlier extras suites: slides, ragdoll/recovery, physical reactions and paired interactions. Chaos has also passed regression of the latest shared changes; the updated handover records an open NP first-person camera regression investigation. See [release progress](#final-release-scope). The shared setup wizard and final packaging remain. Use each backend's own integration; NP modes cannot substitute for Chaos modes.
+## Spectators on Network Prediction Mover
 
-For NP multiplayer spectators, the integration provides **ATraversalGaspNPSpectatorPawn**. Use the supported NP spectator path: Network Prediction needs an appropriate locally controlled NP pawn to correct remote players. Test spectator views as well as active players.
+For NP multiplayer spectators, use **ATraversalGaspNPSpectatorPawn**. Network Prediction needs a suitable locally controlled NP pawn to correct remote players, so test spectator views as well as active players.

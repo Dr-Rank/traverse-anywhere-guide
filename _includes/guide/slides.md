@@ -1,29 +1,25 @@
-**Final-release feature plan · CMC / GMC / Network Prediction Mover / Chaos Mover**
+**Extra · CMC / GMC / Network Prediction Mover / Chaos Mover**
 
-**CMC now supports all three animated slide types in the qualified development build.** The audited GASP CMC character did not have a working slide setup; GASP & Traverse Anywhere adds native movement and the required animation selection. [Read the verified CMC update](#cmc-extras).
+Three slide behaviours are included. The movement system handles its own prediction and replay.
 
-Three slide behaviours are included in the plan. Choose the trigger model that fits your game; the movement system handles its own prediction and replay.
-
-| Slide type | Intended behaviour |
+| Slide type | Behaviour |
 | --- | --- |
-| **Requested slope slide** | Crouch while sprinting on an eligible slope to start. Release crouch to end the requested slide. Entry checks use slope and speed. |
-| **Automatic steep-slope slide** | Enter a slide when the configured steep-slope conditions are met, without a crouch request. This has its own automatic-entry rules. |
-| **Flat crouch slide** | A GASP-style slide on suitable flat ground, followed by run-out and an exit appropriate to speed and stance. |
+| **Requested slope slide** | Crouch while sprinting on an eligible slope to start. Release crouch to end the slide. Entry checks the slope and your speed. |
+| **Automatic steep-slope slide** | Starts by itself on a slope steep enough, without a crouch request, and recovers into animation when the slope eases. |
+| **Flat crouch slide** | A GASP-style slide on flat ground when you crouch while running fast, followed by a run-out and an exit that suits your speed and stance. |
 
 ## Movement and animation
 
-The slide system is designed to retain approach momentum, follow the floor and feed its slope to the animation. Entry, loop and exit clips must match the selected style and stance. Releasing a requested slide should lead to the correct standing exit; holding crouch can lead to a crouched exit.
+The slide keeps your approach momentum, follows the floor and feeds its slope to the animation. Entry, loop and exit clips match the style and stance: releasing crouch leads to a standing exit, holding crouch to a crouched exit.
 
-CMC's animated slides are verified, but Mover-style body lean/alignment to the slope remains a separate item in the CMC slide plan.
+**CMC:** the Game Animation Sample's own CMC character has no working slide. GASP & Traverse Anywhere adds native CMC slide movement and the selection rules for the slide animations, so all three slides work on CMC. CMC slides do not yet lean the body into the slope the way the Mover slides do.
 
-Slide thresholds, steering, braking and exit conditions must be tuned with the chosen backend. Do not assume identical stopping distance between CMC, GMC, Network Prediction Mover and Chaos Mover.
+Slide thresholds, steering, braking and exit conditions are tuned per backend. Stopping distances differ between CMC, GMC, Network Prediction Mover and Chaos Mover.
 
 ## First-person view
 
-The planned first-person setup follows the animated head during sliding and can restrict look angles. Limits should ease in and restore on exit, so a slide does not leave ordinary camera movement constrained.
+In first person the camera follows the animated head through the slide. With the **Camera limits** extra, look angles are limited during the slide, eased in and restored on exit, so normal camera movement is never left constrained.
 
 ## Check it in your project
 
-Try each enabled trigger separately: a slope request, an automatic steep slope and a flat run-out. Repeat with early release, held crouch, a ledge exit and a blocked approach. Check the owner and another player's view for stance, speed and the transition back to locomotion.
-
-See [release progress](#final-release-scope) for backend qualification and [optional setup](#optional-gasp-features) for the planned wizard.
+Try each slide separately: a slope request, an automatic steep slope and a flat run-out. Repeat with early release, held crouch, a ledge exit and a blocked approach. Check the owner's and another player's view for stance, speed and the transition back to locomotion.

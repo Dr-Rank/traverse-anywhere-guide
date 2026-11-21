@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title: "Final-release scope and progress"
+title: "What's in this build"
 permalink: /final-release-scope.html
 target: /#final-release-scope
 ---

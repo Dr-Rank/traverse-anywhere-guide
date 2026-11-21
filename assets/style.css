@@ -10,3 +10,5 @@
 .brand img{height:58px;object-fit:cover;object-position:center}@media(max-width:650px){.brand img{height:48px}}
 
 .shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 16px;align-items:start}.shots figure{margin:0}.shots figure img{aspect-ratio:auto;border:1px solid #c5d2da}@media(max-width:650px){.shots{grid-template-columns:1fr}}@media print{.shots{gap:5mm}}
+.sheet p>img{display:block;max-width:100%;height:auto;margin:10px 0 18px;border:1px solid #c5d2da}.sheet p>img[src*="toolbar"]{border:0}
+td code{overflow-wrap:normal;word-break:normal;white-space:nowrap}

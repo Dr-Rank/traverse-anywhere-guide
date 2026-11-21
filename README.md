@@ -2,7 +2,7 @@
 
 **Read the illustrated guide:** https://dr-rank.github.io/traverse-anywhere-guide/
 
-The complete guide is on one continuous page, using a printable, illustrated layout: cover, movement choices, final-release scope, grouped feature pictures, practical setup and planned extras.
+The complete guide is on one continuous page, using a printable, illustrated layout: cover, movement choices, final-release scope, grouped feature pictures, practical setup, extras, first person and a Blueprint reference.
 
 ## Update the guide
 
@@ -17,20 +17,10 @@ Old chapter links redirect to the matching section of the complete guide. The ad
 
 This repository contains documentation and illustrative media only. It does not distribute the plugin, Game Animation Sample, private test geometry or project assets. Product and character names remain the property of their respective owners.
 
-## Release scope update — 15 November 2026
+## Tester edition — 21 November 2026
 
-The guide presents CMC, GMC, Network Prediction Mover and Chaos Mover as four primary choices. GMC is a separately purchased, installed and enabled paid dependency, with GMCMotion and GMAS also required for its integration.
-
-New chapters cover the final-release scope/status, optional-feature wizard, three slide behaviours, ragdoll/get-up/death and physical reactions, paired interactions, and planned retargeting of users' own animations. Planned setup is distinguished from completed backend qualification.
-
-Content was reconciled against the 15 November CMC handover, 14 November NP handover, 18 October extras plan (including the 15 November retargeting addition), backend-neutral extras plan and GASP feature inventory. Broader GASP inventory items remain explicitly pending where the handover does not establish complete integration. These are internal source documents; the public guide does not distribute them or the product code.
-
-## Expanded name and CMC support
-
-Brand: **GASP & Traverse Anywhere**. Tagline: **First or Third Person. Your Choice of Supported Skeleton.** The logo is in `assets/images/gasp-traverse-anywhere-logo.png`; the original logo remains available for historical reference. The existing repository URL and editor labels are retained.
-
-CMC status was reconciled with the updated 15 November handover: run 7351 passed all 22 cases without the long-frame allowance, including all three animated slides. The guide records the passing GMC/Chaos shared-change regressions and the open NP regression separately from wizard, skeleton and packaging work.
-
-## Setup wizard chapter — 20 November 2026
-
-New **Use the setup wizard** chapter (`_includes/guide/use-the-setup-wizard.md`) and three **Setup wizard screens** sheets: the setup window, all seven guided steps, the new-pawn route with its four movement choices, the locomotion guard message, an extras selection, the review page and the plan returned to the setup window. Screens are actual Unreal Editor captures of the current build, using Manny (`SKM_Manny_Simple` on `SK_Mannequin`) on a CMC pawn; the images are `assets/images/wizard-*.webp`. Portrait screens use the `.shots` grid in `assets/style.css` (two columns, one on phones). Text follows the wizard's own on-screen wording, including the save reminder shown after Fix or Fix all.
+- New chapters: **The setup window**, **Copy an engine pawn into your project**, **First-person camera functions** (the six Blueprint camera functions, with an example graph) and **Blueprint reference** (traversal, ragdoll, hits, death and paired interactions).
+- **Use the setup wizard** rewritten for the current wizard, with fresh screenshots of both paths (keep your pawn, create a new pawn), extras and review.
+- **Make an object traversable** now covers the level editor's Make Traversable and Cull Covered Traversal Proxies commands.
+- Status chapters now describe what is in this tester build; planned-only material is limited to retargeting your own animations, which is marked *Not in this build*.
+- The setup labels match the editor: Ready, Action needed, Needs attention, Optional, Info and Restart needed, with Apply and Apply required changes.

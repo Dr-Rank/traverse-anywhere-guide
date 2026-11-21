@@ -1,29 +1,27 @@
-**Planned setup · all four movement systems**
+**All four movement systems · new pawns only**
 
-The final **Full animation setup** workflow is planned to offer an **Optional GASP features** group for **CMC, GMC, Network Prediction Mover and Chaos Mover**. Extras are **opt-in and off by default**. Leaving them unticked is intended to preserve the existing generated output.
+The extras are opt-in and **off by default**. You choose them for a **new** pawn, either in [wizard step 6](#use-the-setup-wizard) or under **Extras for the new pawn (optional)** in [Full animation setup](#create-a-character-with-full-animations). Leaving them all unticked gives you base traversal and locomotion only.
 
-| Option | What it adds |
-| --- | --- |
-| Slide | Selectable slide triggers, native movement integration and slide animation states. |
-| Ragdoll & get-ups | Knockdown, active ragdoll, pose-based recovery and the components needed to return control. |
-| Physical hit reactions | PhysicsControl reactions and injury strength, usable without a full knockdown. |
-| Interactions | Paired shove, tackle and takedown animations and participant coordination. |
-| First-person camera limits | Limits during slides/knockdown, with restoration when normal control returns. Physical head following is covered in [first-person setup](#create-a-first-person-character). |
+| Extra | What it adds | Read more |
+| --- | --- | --- |
+| Slide | Slide movement for your backend and its animation states and transitions. | [Slides](#slides) |
+| Ragdoll and get-up | Knockdown, active ragdoll, pose-based recovery, death ragdolls and the components that return control. | [Ragdoll and physical reactions](#ragdoll-and-physical-reactions) |
+| Physical hit reactions | Physics Control reactions and injury strength, without a full knockdown. | [Ragdoll and physical reactions](#ragdoll-and-physical-reactions) |
+| Paired interactions | Shove, tackle and takedown animations, participant coordination and the recovery they need. | [Paired interactions](#paired-interactions) |
+| Camera limits (first person) | Limits first-person looking during slides and knockdowns, restored when normal control returns. | [First-person camera functions](#first-person-camera-blueprint) |
 
-## Planned setup flow
+## Choose carefully
 
-1. Choose your movement system, target mesh and GASP source project.
-2. Select only the extras your game needs and choose the slide trigger behaviour.
-3. Resolve the prerequisite and physics-asset checks for that exact mesh.
-4. Prepare and verify the animations and their supporting assets, then install the generated library and pawn.
-5. Review input, animation and collision setup; test each selected feature in your map and network configuration.
+**Extras are built into the new pawn when it is created and cannot be added or removed later.** To change them, set up a new pawn. An existing pawn that keeps its own locomotion gets no extras; the setup window and the wizard both say so.
 
-Unavailable options should explain the missing dependency or unsupported setup. They must not silently switch your pawn to another movement system.
+If an extra cannot be generated for your choice of movement system and mesh, Full animation setup shows the reason in amber under the checkboxes. Setup never silently switches your pawn to another movement system to make an extra work.
 
-## Physics and animation preparation
+## What the extras need
 
-The wizard is planned to check the physics bodies required by the selected control profile and map that profile to the target skeleton. Generating missing bodies is an **explicit optional choice**, not an automatic replacement of your physics asset.
+- **Ragdoll, hit reactions and interactions** need the **Physics Control** plugin and a physics asset fitted to your mesh. Interactions also need recovery animations, which they bring with them.
+- The generated Animation Blueprint carries the ragdoll and get-up, slide and interaction states, montage playback and pose history. Copying animation files alone does not complete the setup.
+- **Your game** still decides when things happen: damage and death, which input triggers an interaction, and what a knockdown means for scoring. Connect them with the [Blueprint reference](#blueprint-reference).
 
-Planned checks also cover the Ragdoll collision profile, Obstacle channel/preset and gameplay tags. Feature imports include get-up montages/choosers, injury and strength data, slide clips/curves, paired-interaction databases and required Foley assets.
+## Test each extra
 
-The Animation Blueprint must have the corresponding ragdoll/get-up and slide states, montage playback and pose history. Copying animation files alone does not complete setup. Existing gameplay input, equipment and camera logic still need integration.
+Test each extra on its own and in the combinations you intend to ship, including with all extras off. Cover third and first person, the meshes and physics assets you ship, and server, owner and remote-player views, with lag and packet loss if your game is networked.

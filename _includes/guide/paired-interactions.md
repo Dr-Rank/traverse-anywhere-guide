@@ -1,25 +1,25 @@
-**Final-release feature plan · CMC / GMC / Network Prediction Mover / Chaos Mover**
+**Extra · CMC / GMC / Network Prediction Mover / Chaos Mover**
 
-Shove, tackle and takedown are part of the planned release. These are coordinated two-character actions, with matching participant animations and authoritative gameplay state.
+Shove, tackle and takedown are coordinated two-character actions, with matching animations for both participants and server-authoritative state.
 
-| Interaction | What setup must provide |
+| Interaction | What happens |
 | --- | --- |
-| **Shove** | Suitable participant selection, paired animation and the target's reaction. |
-| **Tackle** | Coordinated approach/contact, displacement and the resulting physical response. |
-| **Takedown** | Matching attacker/target animation, transition into the intended downed state and appropriate recovery or control return. |
+| **Shove** | The target is pushed and reacts physically. |
+| **Tackle** | A coordinated approach and contact, displacement and the resulting physical response. |
+| **Takedown** | Matching attacker and target animations, a transition into the downed state, then recovery and return of control. |
+
+The initiator stays in control. The target is out of control until it has recovered; **Is Out Of Player Control** tells your code when.
 
 ## Both participants matter
 
-The system must select an eligible partner, assign roles and coordinate the action. A participant whose movement integration does not support interactions is excluded. Treat support for each backend as separate from **mixed-backend pairings**: arbitrary CMC/GMC/Mover combinations are not established by the handover.
+The plugin picks an eligible partner in front of the initiator (within 2 m, 50 cm up or down, 60° either side, unobstructed), assigns roles and plays both sides from the best-matching paired animation for the initiator's speed. A participant whose movement integration does not support interactions is skipped.
 
-The import needs the paired montages, interaction Pose Search assets, choosers and any required recovery animations. Retargeting only the attacker's clip is insufficient.
+Interactions are tested between two pawns **of the same movement system**. Mixed pairings, such as CMC against GMC, are not established.
 
 ## Connect your game's rules
 
-Use your own targeting, input and eligibility rules to decide when to request an interaction. Check refusal when a partner is unavailable or busy, interruption, completion and the return of movement/control. Decide how these actions affect health and death in your game.
+Trigger an interaction from input with **Request Interaction**, or from server code with **Try Interaction**. Your game decides when it is allowed (targeting, teams, cooldowns) and what it means for health and death. Check refusal when no partner is available or the partner is busy, interruption, completion and return of control. See the [Blueprint reference](#blueprint-reference).
 
 ## Multiplayer checks
 
-Verify both characters from the server, owning clients and a remote observer. They should agree on the pairing and selected animation, then settle back into the intended gameplay state.
-
-CMC has now passed the complete 22-case suite, including paired and network interaction cases. GMC and Chaos passed the latest shared-change regressions. NP's earlier suite passed, but its latest shared-change regression is under investigation. The final setup wizard and packaged feature combinations remain part of the release work. See [release progress](#final-release-scope).
+Watch both characters from the server, both owning clients and a remote observer. They should agree on the pairing and animation, then settle back into normal gameplay.

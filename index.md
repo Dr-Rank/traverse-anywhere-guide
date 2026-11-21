@@ -5,166 +5,182 @@ title: The user guide
 permalink: /
 ---
 
-<section class="sheet cover" id="cover"><img src="assets/images/gasp-traverse-anywhere-logo.png" alt="GASP & Traverse Anywhere" class="cover-logo"><h1>THE USER<br>GUIDE</h1><div class="cover-copy"><strong>FEATURES AND SETUP FOR YOUR PROJECT</strong><div class="cover-edition">FINAL-RELEASE PLAN &amp; SETUP GUIDE</div><p class="brand-tagline">First or Third Person.<br>Your Choice of Supported Skeleton.</p><div class="cover-backends" aria-label="Supported movement systems"><span>CMC</span><span>GMC</span><span>Network Prediction Mover</span><span>Chaos Mover</span></div><p class="cover-summary">Animation, traversal and physical interaction for Unreal Engine.</p><ol><li>Choose your movement system</li><li>Install and prepare your pawn</li><li>Import animations safely</li><li>Make objects traversable</li><li>Explore planned extras and retargeting</li></ol></div><div class="cover-bottom">UNREAL ENGINE 5.8 / EXECUTE GAMES / NOVEMBER 2026<br>CMC / GMC / NP MOVER / CHAOS MOVER</div></section>
+
+<section class="sheet cover" id="cover"><img src="assets/images/gasp-traverse-anywhere-logo.png" alt="GASP & Traverse Anywhere" class="cover-logo"><h1>THE USER<br>GUIDE</h1><div class="cover-copy"><strong>FEATURES AND SETUP FOR YOUR PROJECT</strong><div class="cover-edition">TESTER EDITION · NOVEMBER 2026</div><p class="brand-tagline">First or Third Person.<br>Your Choice of Supported Skeleton.</p><div class="cover-backends" aria-label="Supported movement systems"><span>CMC</span><span>GMC</span><span>Network Prediction Mover</span><span>Chaos Mover</span></div><p class="cover-summary">Animation, traversal and physical interaction for Unreal Engine.</p><ol><li>Choose your movement system</li><li>Set up your pawn with the guided setup</li><li>Import animations or build a full GASP pawn</li><li>Make objects traversable</li><li>Add extras, first person and your own Blueprint logic</li></ol></div><div class="cover-bottom">UNREAL ENGINE 5.8 / EXECUTE GAMES / NOVEMBER 2026<br>CMC / GMC / NP MOVER / CHAOS MOVER</div></section>
 
 <section class="sheet" id="start-here" aria-label="Start here"><h2>Start here</h2>
 {% capture chapter %}{% include guide/start-here.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>2</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>2</span></div></section>
 
 <section class="sheet" id="choose-your-movement-system" aria-label="Choose your movement system"><h2>Choose your movement system</h2>
 {% capture chapter %}{% include guide/choose-your-movement-system.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>3</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>3</span></div></section>
 
-<section class="sheet" id="cmc-extras" aria-label="CMC extras now supported"><h2>CMC extras now supported</h2>
-{% capture chapter %}{% include guide/cmc-extras.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>4</span></div></section>
-
-<section class="sheet" id="final-release-scope" aria-label="Final-release scope and progress"><h2>Final-release scope and progress</h2>
+<section class="sheet" id="final-release-scope" aria-label="What's in this build"><h2>What's in this build</h2>
 {% capture chapter %}{% include guide/final-release-scope.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>5</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>4</span></div></section>
 
 <section class="sheet" id="features" aria-label="Features"><h2>Features</h2>
 {% capture chapter %}{% include guide/features.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>6</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>5</span></div></section>
 
 <section class="sheet" id="features-character-setup" aria-label="Features character setup"><h2>Features character setup</h2>
-<figure><img src="assets/images/11-guided-character-setup.webp" alt="Guided character setup" width="1440" height="810"><figcaption><strong>Guided character setup.</strong> See what is ready, fix supported setup rows individually or use Fix all. Backup reminders and confirmations identify shared changes; optional rows stay yours to choose.</figcaption></figure>
+<figure><img src="assets/images/11-guided-character-setup.webp" alt="Guided character setup" width="1440" height="810"><figcaption><strong>Guided character setup.</strong> See what is ready, apply supported rows one at a time or use Apply required changes. Backup reminders and confirmations identify shared changes; optional rows stay yours to choose.</figcaption></figure>
 <figure><img src="assets/images/12-keep-your-locomotion.webp" alt="Traversal with your locomotion" width="1440" height="810"><figcaption><strong>Traversal with your locomotion.</strong> Add traversal through a montage slot while keeping your character&#x27;s normal locomotion. Supported jump setup tries traversal first and falls back to ordinary jump when no action can start.</figcaption></figure>
 
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>7</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>6</span></div></section>
 
 <section class="sheet" id="features-animation-libraries" aria-label="Features animation libraries"><h2>Features animation libraries</h2>
-<figure><img src="assets/images/13-full-animation-setup.webp" alt="Full animation preparation" width="1440" height="810"><figcaption><strong>Full animation preparation.</strong> Prepare and verify a motion-matching library for your selected mesh, then install the generated pawn, game mode and settings. The final setup plan includes CMC, GMC, Network Prediction Mover and Chaos Mover. Existing gameplay pawns are kept separate.</figcaption></figure>
+<figure><img src="assets/images/13-full-animation-setup.webp" alt="Full animation preparation" width="1440" height="810"><figcaption><strong>Full animation preparation.</strong> Prepare and verify a motion-matching library for your selected mesh, then install the generated pawn, game mode and settings. Available for CMC, GMC, Network Prediction Mover and Chaos Mover. Existing gameplay pawns are kept separate.</figcaption></figure>
 <figure><img src="assets/images/14-skeleton-specific-libraries.webp" alt="Supported skeleton libraries" width="1440" height="810"><figcaption><strong>Supported skeleton libraries.</strong> Import baked traversal clips for Manny, Quinn, UE4, UEFN and male or female Animan. Multiple skeletons and differing mesh poses retain their own libraries without overwriting other targets.</figcaption></figure>
 
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>8</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>7</span></div></section>
 
 <section class="sheet" id="features-styles-and-action-selection" aria-label="Features styles and action selection"><h2>Features styles and action selection</h2>
 <figure><img src="assets/images/15-traversal-styles.webp" alt="Neutral and Relaxed styles" width="1440" height="810"><figcaption><strong>Neutral and Relaxed styles.</strong> Choose Neutral or Relaxed traversal, then apply the chooser setup. Your selection is retained; some Relaxed actions intentionally reuse Neutral clips.</figcaption></figure>
 <figure><img src="assets/images/16-animation-selection-and-warping.webp" alt="Pose selection and motion warping" width="1440" height="810"><figcaption><strong>Pose selection and motion warping.</strong> A chooser uses approach, obstacle data and pose history to select hurdles, vaults, mantles and climbs. Motion warping adjusts supported clips to ledge and landing targets; grounded climb rows extend to 300 cm.</figcaption></figure>
 
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>9</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>8</span></div></section>
 
 <section class="sheet" id="features-contact-and-locomotion-recovery" aria-label="Features contact and locomotion recovery"><h2>Features contact and locomotion recovery</h2>
 <figure><img src="assets/images/17-hands-and-foot-clearance.webp" alt="Hand contact and leg clearance" width="1440" height="810"><figcaption><strong>Hand contact and leg clearance.</strong> Baked retargeting preserves authored hand-goal heights on supported rigs. Foot-clearance controls help keep legs clear of box collision, while setup gates ordinary foot IK and unwanted airborne poses during traversal.</figcaption></figure>
 <figure><img src="assets/images/18-blend-back-to-locomotion.webp" alt="Return to locomotion" width="1440" height="810"><figcaption><strong>Return to locomotion.</strong> Traversal uses the montage&#x27;s blend-out to recover into walking or idle, including hybrid setups. Keep the slot connected to locomotion; custom code must preserve the animation graph through the handoff.</figcaption></figure>
 
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>10</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>9</span></div></section>
 
 <section class="sheet" id="features-objects-and-proxies-1" aria-label="Features objects and proxies 1"><h2>Features objects and proxies 1</h2>
 <figure><img src="assets/images/01-one-click-setup.webp" alt="One click object setup" width="1440" height="810"><figcaption><strong>One click object setup.</strong> Right-click a static mesh and choose Make Traversable. The new Blueprint includes its mesh, Traversable component, generated proxies and fitted Pawn collision, ready to drag into your level.</figcaption></figure>
 <figure><img src="assets/images/02-clean-traversal-surfaces.webp" alt="Cleaner traversal surfaces" width="1440" height="810"><figcaption><strong>Cleaner traversal surfaces.</strong> Fit simple boxes to detailed static meshes and supported assemblies, including instanced, spline and child-actor meshes. Traversal reads the fitted surfaces rather than relying on poor source collision.</figcaption></figure>
 
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>11</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>10</span></div></section>
 
 <section class="sheet" id="features-objects-and-proxies-2" aria-label="Features objects and proxies 2"><h2>Features objects and proxies 2</h2>
 <figure><img src="assets/images/03-local-ledge-heights.webp" alt="Local ledge heights" width="1440" height="810"><figcaption><strong>Local ledge heights.</strong> Raised corners stay local instead of lifting the entire top. Tighter edge fitting gives the traversal chooser and motion warping more representative ledge targets.</figcaption></figure>
 <figure><img src="assets/images/04-filter-small-spikes.webp" alt="Narrow spike filtering" width="1440" height="810"><figcaption><strong>Narrow spike filtering.</strong> Filter small isolated raised details without flattening long walls or rails. The filter radius is adjustable, so you can retain decoration when it matters to your design.</figcaption></figure>
 
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>12</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>11</span></div></section>
 
 <section class="sheet" id="features-objects-and-proxies-3" aria-label="Features objects and proxies 3"><h2>Features objects and proxies 3</h2>
 <figure><img src="assets/images/05-filter-unusable-shelves.webp" alt="Usable surface filtering" width="1440" height="810"><figcaption><strong>Usable surface filtering.</strong> Omit shallow shelves beside taller geometry while retaining usable steps and standalone thin walls. Configure the required footprint; runtime room checks still decide whether the action is safe.</figcaption></figure>
 <figure><img src="assets/images/06-fitted-pawn-collision.webp" alt="Fitted Pawn support" width="1440" height="810"><figcaption><strong>Fitted Pawn support.</strong> Optional physical proxies align Pawn support with the traversal shape. Make Traversable enables them automatically, replacing the source mesh&#x27;s Pawn response while leaving its other responses available.</figcaption></figure>
 
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>13</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>12</span></div></section>
 
 <section class="sheet" id="features-objects-and-proxies-4" aria-label="Features objects and proxies 4"><h2>Features objects and proxies 4</h2>
 <figure><img src="assets/images/07-preserve-other-collision.webp" alt="Preserved source geometry" width="1440" height="810"><figcaption><strong>Preserved source geometry.</strong> Keep the original static mesh asset, visual detail and non-Pawn collision responses. Traversal probes and the forward sweep use eligible generated proxies, avoiding competing source colliders.</figcaption></figure>
 <figure><img src="assets/images/08-reusable-runtime-proxies.webp" alt="Reusable runtime proxies" width="1440" height="810"><figcaption><strong>Reusable runtime proxies.</strong> Calculate in the editor and reuse the saved components across Blueprint instances and packaged games. The game queries boxes without running the editor fitter; cost depends on the proxy count.</figcaption></figure>
 
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>14</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>13</span></div></section>
 
 <section class="sheet" id="features-objects-and-proxies-5" aria-label="Features objects and proxies 5"><h2>Features objects and proxies 5</h2>
 <figure><img src="assets/images/09-tune-the-fit.webp" alt="Control over fitting" width="1440" height="810"><figcaption><strong>Control over fitting.</strong> Adjust sampling, filters, top and ledge tolerances, and the preferred box budget. Accuracy limits take priority over the budget, so complexity reductions do not justify an arbitrarily inflated surface.</figcaption></figure>
 <figure><img src="assets/images/10-rebuild-and-undo.webp" alt="Rebuild remove and undo" width="1440" height="810"><figcaption><strong>Rebuild remove and undo.</strong> Rebuild the Blueprint&#x27;s proxies after geometry or setting changes to update its instances. Generation is undoable; removing proxies restores source tracing and ends the fitted Pawn collision takeover.</figcaption></figure>
 
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>15</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>14</span></div></section>
 
 <section class="sheet" id="features-movement-and-multiplayer" aria-label="Features movement and multiplayer"><h2>Features movement and multiplayer</h2>
 <div class="backend-grid" aria-label="Four movement systems"><div><strong>CMC</strong><span>Character Movement</span></div><div><strong>GMC</strong><span>General Movement Component<br>Separate paid purchase required</span></div><div><strong>NP Mover</strong><span>Network Prediction</span></div><div><strong>Chaos Mover</strong><span>Chaos physics</span></div></div><p>Four primary movement choices with native integration. The final plan covers traversal, full-animation setup, optional extras and first-person presentation on each.</p><div class="notice dependency"><strong>GMC is sold separately.</strong> You must purchase, install and enable a compatible GMC version to use this route. GMC is not included with GASP & Traverse Anywhere. <a href="#prepare-a-gmc-project">Check all GMC prerequisites</a>.</div><p>See <a href="#final-release-scope">release progress</a> for the remaining regression, wizard and packaging work.</p>
 <figure><img src="assets/images/20-multiplayer-traversal.webp" alt="Multiplayer traversal playback" width="1440" height="810"><figcaption><strong>Multiplayer traversal playback.</strong> CMC, GMC, Network Prediction Mover and Chaos Mover coordinate traversal across owner, server and other players. Chaos remote-mesh replay improves displayed traversal recovery while gameplay collision remains on the capsule. Test your own network conditions.</figcaption></figure>
 
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>16</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>15</span></div></section>
 
 <section class="sheet" id="features-inspection-and-integration" aria-label="Features inspection and integration"><h2>Features inspection and integration</h2>
 <figure><img src="assets/images/21-ledge-debugging.webp" alt="Ledge inspection and controls" width="1440" height="810"><figcaption><strong>Ledge inspection and controls.</strong> Inspect estimated height labels and debug probes, then tune ledge width, search height, depth, surface inset and slope acceptance. Queries follow current object transforms and usable room still matters.</figcaption></figure>
 <figure><img src="assets/images/22-custom-traversal-integration.webp" alt="Custom integration and events" width="1440" height="810"><figcaption><strong>Custom integration and events.</strong> Read front and back ledge data through Blueprint or C++ for your own traversal logic. Start and end events support cosmetics; animation helper nodes expose traversal state without replacing your usual values.</figcaption></figure>
 
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>17</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>16</span></div></section>
+
+<section class="sheet" id="setup-window" aria-label="The setup window"><h2>The setup window</h2>
+{% capture chapter %}{% include guide/setup-window.md %}{% endcapture %}{{ chapter | markdownify }}
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>17</span></div></section>
 
 <section class="sheet" id="use-the-setup-wizard" aria-label="Use the setup wizard"><h2>Use the setup wizard</h2>
 {% capture chapter %}{% include guide/use-the-setup-wizard.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>18</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>18</span></div></section>
 
-<section class="sheet" id="setup-wizard-screens-1" aria-label="Setup wizard screens 1"><h2>Setup wizard screens 1</h2>
-<div class="shots"><figure><img src="assets/images/wizard-00-setup-window.webp" alt="The setup window" width="1018" height="618" loading="lazy"><figcaption><strong>The setup window.</strong> Every check and fix for the chosen pawn. <em>Help me choose: guided setup</em> opens the wizard; the manual controls stay below it. Pictured: Manny (SKM_Manny_Simple) on a CMC pawn.</figcaption></figure><figure><img src="assets/images/wizard-01-starting-point.webp" alt="Step 1: starting point" width="826" height="760" loading="lazy"><figcaption><strong>Step 1: starting point.</strong> Keep an existing pawn Blueprint, or start a new pawn from a skeletal mesh. Nothing is generated while you answer.</figcaption></figure><figure><img src="assets/images/wizard-02-animation-system.webp" alt="Step 2: animation system" width="826" height="760" loading="lazy"><figcaption><strong>Step 2: animation system.</strong> Keep your locomotion and add traversal, or install full GASP motion matching in a separate generated pawn.</figcaption></figure><figure><img src="assets/images/wizard-02b-mesh-needs-pawn.webp" alt="A mesh has no locomotion to keep" width="826" height="760" loading="lazy"><figcaption><strong>A mesh has no locomotion to keep.</strong> Choosing a new pawn and then &ldquo;keep my locomotion&rdquo; holds you here with an explanation, because a mesh alone has no locomotion system.</figcaption></figure></div>
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>19</span></div></section>
+<section class="sheet" id="setup-wizard-screens-1" aria-label="Setup wizard screens: keep your pawn"><h2>Setup wizard screens: keep your pawn</h2>
+<p>Path A, for a pawn you already have. Pictured: a CMC pawn with SKM_Manny_Simple.</p>
+<div class="shots"><figure><img src="assets/images/wizard-01-starting-point.webp" alt="Step 1: starting point" width="1000" height="476" loading="lazy"><figcaption><strong>Step 1: starting point.</strong> Keep an existing pawn Blueprint, or create a new pawn from a skeletal mesh.</figcaption></figure><figure><img src="assets/images/wizard-02-animation-system.webp" alt="Step 2: animation setup" width="1000" height="521" loading="lazy"><figcaption><strong>Step 2: animation setup.</strong> Keep your locomotion and add traversal, or build a separate full GASP pawn.</figcaption></figure><figure><img src="assets/images/wizard-03-existing-pawn.webp" alt="Step 3: your pawn" width="1000" height="592" loading="lazy"><figcaption><strong>Step 3: your pawn.</strong> The mesh, skeleton and movement adapter are read from the pawn. Where to find them lists your pawns, the GASP sample pawns and the engine Mover examples.</figcaption></figure><figure><img src="assets/images/wizard-04-keep-movement.webp" alt="Step 4: movement" width="1000" height="373" loading="lazy"><figcaption><strong>Step 4: movement.</strong> An existing pawn keeps its movement. To try another system, go back and choose a new pawn.</figcaption></figure><figure><img src="assets/images/wizard-06b-extras-existing-pawn.webp" alt="Step 6: extras" width="1000" height="321" loading="lazy"><figcaption><strong>Step 6: extras.</strong> Keeping your pawn adds no extras. The page says how to get them.</figcaption></figure><figure><img src="assets/images/copy-01-wizard-copy-button.webp" alt="Step 3 with an engine pawn" width="1000" height="737" loading="lazy"><figcaption><strong>Step 3 with an engine pawn.</strong> Keeping an engine pawn's locomotion needs a copy first. Next stays locked until it exists.</figcaption></figure></div>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>19</span></div></section>
 
-<section class="sheet" id="setup-wizard-screens-2" aria-label="Setup wizard screens 2"><h2>Setup wizard screens 2</h2>
-<div class="shots"><figure><img src="assets/images/wizard-03-existing-pawn.webp" alt="Step 3: your existing pawn" width="826" height="760" loading="lazy"><figcaption><strong>Step 3: your existing pawn.</strong> The wizard reads the mesh, skeleton and movement adapter from the pawn. Pictured: BP_CMC with SKM_Manny_Simple on SK_Mannequin.</figcaption></figure><figure><img src="assets/images/wizard-03b-new-pawn-mesh.webp" alt="Step 3: a mesh for a new pawn" width="826" height="760" loading="lazy"><figcaption><strong>Step 3: a mesh for a new pawn.</strong> For a new pawn, pick the skeletal mesh you want in game; its skeleton is detected. Manny and Quinn can share a skeleton.</figcaption></figure><figure><img src="assets/images/wizard-04-keep-movement.webp" alt="Step 4: existing movement is kept" width="826" height="760" loading="lazy"><figcaption><strong>Step 4: existing movement is kept.</strong> An existing pawn keeps its movement component. To try another system, go back and choose a new pawn.</figcaption></figure><figure><img src="assets/images/wizard-04b-movement-choices.webp" alt="Step 4: four movement choices" width="826" height="760" loading="lazy"><figcaption><strong>Step 4: four movement choices.</strong> A new pawn can use Character Movement (CMC), Network Prediction Mover, Chaos Mover or General Movement Component (GMC, a separate paid plugin).</figcaption></figure></div>
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>20</span></div></section>
+<section class="sheet" id="setup-wizard-screens-2" aria-label="Setup wizard screens: a new pawn"><h2>Setup wizard screens: a new pawn</h2>
+<p>Path B, creating a new pawn from a skeletal mesh.</p>
+<div class="shots"><figure><img src="assets/images/wizard-02b-new-pawn-full-gasp.webp" alt="Step 2: full GASP" width="1000" height="506" loading="lazy"><figcaption><strong>Step 2: full GASP.</strong> Selected for you. Keeping locomotion needs an existing pawn, so it is unavailable here and says why.</figcaption></figure><figure><img src="assets/images/wizard-03b-new-pawn-mesh.webp" alt="Step 3: your mesh" width="1000" height="592" loading="lazy"><figcaption><strong>Step 3: your mesh.</strong> Pick the mesh you want to see in game. Engine and plugin meshes can be used as they are.</figcaption></figure><figure><img src="assets/images/wizard-04b-movement-choices.webp" alt="Step 4: movement" width="1000" height="636" loading="lazy"><figcaption><strong>Step 4: movement.</strong> Character Movement is recommended when you are unsure. GMC needs its own paid plugin.</figcaption></figure><figure><img src="assets/images/wizard-05-perspective.webp" alt="Step 5: perspective" width="1000" height="447" loading="lazy"><figcaption><strong>Step 5: perspective.</strong> Third or first person. First person never overwrites your third-person pawn.</figcaption></figure></div>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>20</span></div></section>
 
-<section class="sheet" id="setup-wizard-screens-3" aria-label="Setup wizard screens 3"><h2>Setup wizard screens 3</h2>
-<div class="shots"><figure><img src="assets/images/wizard-05-perspective.webp" alt="Step 5: perspective" width="826" height="760" loading="lazy"><figcaption><strong>Step 5: perspective.</strong> Third or first person. With your own locomotion, turn-in-place is your responsibility, and the wizard says so.</figcaption></figure><figure><img src="assets/images/wizard-06-extras.webp" alt="Step 6: optional extras" width="826" height="760" loading="lazy"><figcaption><strong>Step 6: optional extras.</strong> All extras are optional. Pictured with Slide and Ragdoll and get-up selected; physics extras list Physics Control as required support.</figcaption></figure><figure><img src="assets/images/wizard-07-review.webp" alt="Step 7: review" width="826" height="760" loading="lazy"><figcaption><strong>Step 7: review.</strong> A summary of the plan. <em>Use this setup plan</em> returns it to the setup window without generating assets, changing your GameMode or enabling plugins.</figcaption></figure><figure><img src="assets/images/wizard-08-plan-in-setup.webp" alt="Your plan in the setup window" width="1018" height="618" loading="lazy"><figcaption><strong>Your plan in the setup window.</strong> The plan appears as one line above the checks. Selections are a plan, not installed features, until you apply the setup.</figcaption></figure></div>
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>21</span></div></section>
+<section class="sheet" id="setup-wizard-screens-3" aria-label="Setup wizard screens: extras and review"><h2>Setup wizard screens: extras and review</h2>
+<p>Steps 6 and 7 for a new pawn, then the plan back in the setup window.</p>
+<div class="shots"><figure><img src="assets/images/wizard-06-extras.webp" alt="Step 6: extras" width="1000" height="695" loading="lazy"><figcaption><strong>Step 6: extras.</strong> Please choose carefully: extras are built into the new pawn and cannot be added or removed later.</figcaption></figure><figure><img src="assets/images/wizard-07-review.webp" alt="Step 7: review" width="1000" height="520" loading="lazy"><figcaption><strong>Step 7: review.</strong> A summary, including the support each extra needs. Use this setup plan returns it to the setup window.</figcaption></figure></div>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>21</span></div></section>
+
+<section class="sheet" id="copy-into-project" aria-label="Copy an engine pawn into your project"><h2>Copy an engine pawn into your project</h2>
+{% capture chapter %}{% include guide/copy-into-project.md %}{% endcapture %}{{ chapter | markdownify }}
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>22</span></div></section>
 
 <section class="sheet" id="set-up-an-existing-character" aria-label="Set up an existing character"><h2>Set up an existing character</h2>
 {% capture chapter %}{% include guide/set-up-an-existing-character.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>22</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>23</span></div></section>
 
 <section class="sheet" id="understand-the-character-setup-rows" aria-label="Understand the character setup rows"><h2>Understand the character setup rows</h2>
 {% capture chapter %}{% include guide/understand-the-character-setup-rows.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>23</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>24</span></div></section>
 
 <section class="sheet" id="choose-and-manage-your-traversal-animations" aria-label="Choose and manage your traversal animations"><h2>Choose and manage your traversal animations</h2>
 {% capture chapter %}{% include guide/choose-and-manage-your-traversal-animations.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>24</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>25</span></div></section>
 
 <section class="sheet" id="create-a-character-with-full-animations" aria-label="Create a character with full animations"><h2>Create a character with full animations</h2>
 {% capture chapter %}{% include guide/create-a-character-with-full-animations.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>25</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>26</span></div></section>
 
 <section class="sheet" id="optional-gasp-features" aria-label="Optional GASP features"><h2>Optional GASP features</h2>
 {% capture chapter %}{% include guide/optional-gasp-features.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>26</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>27</span></div></section>
 
 <section class="sheet" id="slides" aria-label="Slides"><h2>Slides</h2>
 {% capture chapter %}{% include guide/slides.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>27</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>28</span></div></section>
 
 <section class="sheet" id="ragdoll-and-physical-reactions" aria-label="Ragdoll and physical reactions"><h2>Ragdoll and physical reactions</h2>
 {% capture chapter %}{% include guide/ragdoll-and-physical-reactions.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>28</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>29</span></div></section>
 
 <section class="sheet" id="paired-interactions" aria-label="Paired interactions"><h2>Paired interactions</h2>
 {% capture chapter %}{% include guide/paired-interactions.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>29</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>30</span></div></section>
 
-<section class="sheet" id="retarget-your-own-animations" aria-label="Retarget your own animations"><h2>Retarget your own animations</h2>
-{% capture chapter %}{% include guide/retarget-your-own-animations.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>30</span></div></section>
+<section class="sheet" id="create-a-first-person-character" aria-label="Create a first-person character"><h2>Create a first-person character</h2>
+{% capture chapter %}{% include guide/create-a-first-person-character.md %}{% endcapture %}{{ chapter | markdownify }}
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>31</span></div></section>
+
+<section class="sheet" id="first-person-camera-blueprint" aria-label="First-person camera functions"><h2>First-person camera functions</h2>
+{% capture chapter %}{% include guide/first-person-camera-blueprint.md %}{% endcapture %}{{ chapter | markdownify }}
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>32</span></div></section>
+
+<section class="sheet" id="blueprint-reference" aria-label="Blueprint reference"><h2>Blueprint reference</h2>
+{% capture chapter %}{% include guide/blueprint-reference.md %}{% endcapture %}{{ chapter | markdownify }}
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>33</span></div></section>
 
 <section class="sheet" id="make-an-object-traversable" aria-label="Make an object traversable"><h2>Make an object traversable</h2>
 {% capture chapter %}{% include guide/make-an-object-traversable.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>31</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>34</span></div></section>
 
 <section class="sheet" id="adjust-proxies-and-ledges" aria-label="Adjust proxies and ledges"><h2>Adjust proxies and ledges</h2>
 {% capture chapter %}{% include guide/adjust-proxies-and-ledges.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>32</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>35</span></div></section>
 
-<section class="sheet" id="use-mover" aria-label="Use Mover"><h2>Use Mover</h2>
+<section class="sheet" id="use-mover" aria-label="Use NP Mover or Chaos Mover"><h2>Use NP Mover or Chaos Mover</h2>
 {% capture chapter %}{% include guide/use-mover.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>33</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>36</span></div></section>
 
-<section class="sheet" id="prepare-a-gmc-project" aria-label="Prepare a GMC project"><h2>Prepare a GMC project</h2>
+<section class="sheet" id="prepare-a-gmc-project" aria-label="Use GMC (paid dependency)"><h2>Use GMC (paid dependency)</h2>
 {% capture chapter %}{% include guide/prepare-a-gmc-project.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>34</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>37</span></div></section>
 
-<section class="sheet" id="create-a-first-person-character" aria-label="Create a first person character"><h2>Create a first person character</h2>
-{% capture chapter %}{% include guide/create-a-first-person-character.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>35</span></div></section>
+<section class="sheet" id="retarget-your-own-animations" aria-label="Retarget your own animations (planned)"><h2>Retarget your own animations (planned)</h2>
+{% capture chapter %}{% include guide/retarget-your-own-animations.md %}{% endcapture %}{{ chapter | markdownify }}
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>38</span></div></section>
 
 <section class="sheet" id="test-and-troubleshoot" aria-label="Test and troubleshoot"><h2>Test and troubleshoot</h2>
 {% capture chapter %}{% include guide/test-and-troubleshoot.md %}{% endcapture %}{{ chapter | markdownify }}
-<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE</span><span>36</span></div></section>
+<div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>39</span></div></section>

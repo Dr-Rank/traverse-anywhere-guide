@@ -1,35 +1,35 @@
-**Final-release scope · updated from the latest 15 November 2026 handover**
+**Tester edition · November 2026 · Unreal Engine 5.8**
 
-This guide covers the intended final version as well as established traversal setup. Sections marked **Planned setup** describe work still to be completed. They are not a claim that those controls are already present in your installed build.
+This guide describes the current tester build. Everything below is in that build unless it is marked **Not in this build**. Tell us when something does not match what you see.
 
-## What the final version is planned to include
+## In this build
 
-| Area | Included in the release plan |
+| Area | What you get |
 | --- | --- |
-| Traversal and objects | Hurdles, vaults, mantles/climbs; automatic ledge queries; moving-object transforms; fitted proxies, collision, filters and editor diagnostics; planned camera-facing height markers and closer surface fitting. |
-| Four movement systems | CMC, GMC, Network Prediction Mover and Chaos Mover, including dedicated full-animation setup choices. |
-| Full animation setup | Locomotion, motion matching, pose history, choosers, Pose Search databases, mirroring, warping and supported skeleton libraries prepared with **offline retargeting, without dynamic runtime retargeting**. |
-| Slides | Requested slope slide, automatic steep-slope slide and flat crouch slide, with entry, loop and exit animation. |
-| Ragdoll and recovery | Active ragdoll, knockdown, physical/motion-matched get-up and death-ragdoll integration. |
-| Physical reactions | PhysicsControl hit reactions without a full knockdown, plus injury-state strength changes. |
+| Traversal and objects | Hurdles, vaults, mantles and climbs up to 300 cm; automatic ledge queries; moving objects; one-click **Make Traversable**, fitted proxies and pawn collision, filters, level conversion tools and editor diagnostics. |
+| Four movement systems | **CMC, GMC, Network Prediction Mover and Chaos Mover**, each with its own native integration. |
+| Setup | The [setup window](#setup-window), the seven-question [guided setup](#use-the-setup-wizard), per-row checks and fixes, and [copying engine example pawns](#copy-into-project) into your project. |
+| Full animation setup | A generated pawn per backend with GASP locomotion, motion matching, pose history, choosers, Pose Search databases, mirroring and warping, prepared with **offline retargeting, no dynamic runtime retargeting**. |
+| Supported skeletons | UE5 Manny and Quinn, UE4 Mannequin, UEFN Mannequin, and male and female Animan. |
+| Slides | Requested slope slide, automatic steep-slope slide and flat crouch slide, with entry, loop and exit animation, on all four backends. |
+| Ragdoll and recovery | Active ragdoll, knockdown, physical and motion-matched get-up, and death ragdolls. |
+| Physical reactions | Physics Control hit reactions without a full knockdown, and injury-dependent strength. |
 | Paired interactions | Shove, tackle and takedown with participant coordination and return of control. |
-| Cameras and views | Third-person presentation and first-person head following through traversal, slides, physical reactions, ragdoll and get-up, with configurable look limits. |
-| Setup and imports | Optional-feature selection, physics-asset checks, collision/tag configuration and the required animation, audio and input dependencies. |
-| Your own animations | Offline retargeting of selected sequences or montages using an existing TA retargeter for the chosen skeleton pair. |
+| First person | An owner-only body, a steady camera that follows the head through traversal, slides, reactions, ragdoll and get-up, configurable look limits, and [Blueprint camera functions](#first-person-camera-blueprint). |
+| Multiplayer | Traversal and the extras replicate for the server, the owning player and remote observers. |
 
-## Development progress, not a shipping declaration
+## How it was tested
 
-| Movement system / work | Position in the 15 November handover |
+Each backend's extras pass our automated gameplay suites in the editor: slides, knockdown and get-up, every injury type, hit reactions, shove, tackle and takedown, first-person views, and networked server, owner and observer views, including runs with simulated lag and packet loss. The setup window and wizard have their own automated tests.
+
+**That does not prove your project.** Your own pawn, input, animation, movement settings and gameplay code can behave differently. Back up first, test each feature in your own levels, and report what you find.
+
+## Not in this build
+
+| Item | Status |
 | --- | --- |
-| **CMC extras** | **Complete 22-case extras suite passed**, including all three animated slides, ragdoll/recovery, injuries, paired interactions and camera/network cases. Additional skeleton checks, owner review and product carry remain. [CMC feature update](#cmc-extras). |
-| **GMC extras** | Completed extras work; the shared-change regression passed **14/14**. Final wizard integration and release packaging remain. |
-| **Network Prediction Mover extras** | Earlier 22-case and additional skeleton checks passed and were carried. Regression of the latest shared CMC-related changes is **under investigation** following a first-person camera failure in the running takedown; the latest handover records a diagnostic run, not a pass. |
-| **Chaos Mover extras** | Completed and carried, with additional skeleton checks. Regression of the latest shared changes passed **22/22**. Final wizard integration and release packaging remain. |
+| [Retargeting your own animations](#retarget-your-own-animations) | Planned. The import's retargeting already works for the GASP library; a step for your own sequences and montages is not in this build. |
+| CMC slide body lean | CMC slides are animated, but do not yet lean the body into the slope the way the Mover slides do. |
+| Mixed-backend paired interactions | Each backend's interactions are tested with two pawns of the same backend. CMC against GMC, or Mover against CMC, is not established. |
 
-CMC's complete extras gameplay suite is now qualified in the lab. The open NP regression, additional CMC skeleton coverage, review/product carry, shared wizard, optional-feature generation/imports, user-animation retargeting, remaining Mover test failures and final packaging/documentation still need completion. Passing backend tests does not mean the complete buyer installation is release-qualified.
-
-## Broader GASP coverage still being reconciled
-
-The release plan also requires checking the full source inventory: locomotion and movement modes, animation/pose/chooser systems, foot IK and warping, cameras, Foley audio, input/configuration, and AI/SmartObject behaviour. Bench interactions, avoidance/look-at examples, flying and sample/debug functionality must be explicitly assessed rather than silently omitted. Their complete four-backend integration is **not yet confirmed** by the handover.
-
-GASP assets are imported from the user's separately obtained project. All animation retargeting is offline. Independent ALS-style overlay exploration is a later investigation, outside the current release commitment.
+GASP assets come from your own, separately obtained Game Animation Sample project. All animation retargeting is offline.

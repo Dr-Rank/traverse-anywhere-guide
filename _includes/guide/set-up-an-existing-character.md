@@ -1,26 +1,24 @@
+Use this route to add traversal while keeping your current walking, running and idle animations.
+
 ## Choose your character
 
-In the setup window, select the **pawn Blueprint** your game uses. Check that it has the intended skeletal mesh and Animation Blueprint. GASP & Traverse Anywhere checks the pawn's movement system and shows the rows relevant to it.
+1. Open the [setup window](#setup-window) and pick the **Pawn Blueprint** your game uses in step 1. Check the mesh, skeleton and Animation Blueprint shown underneath.
+2. If the pawn is engine or plugin content, press **Copy into my project** first. See [Copy an engine pawn into your project](#copy-into-project).
+3. Set the **GASP project** folder. The traversal clips are imported from it.
+4. Leave **Use Relaxed traversal animations** off for the default Neutral style, or tick it for Relaxed.
 
-Use this route to add traversal while keeping your current walking, running and idle animations. The four movement routes are **Character Movement (CMC)**, **GMC**, **Network Prediction Mover** and **Chaos Mover**. Mover is an experimental Unreal Engine system.
+Setup detects the pawn's movement system (CMC, GMC, Network Prediction Mover or Chaos Mover) and only shows the checks relevant to it. **GMC needs its separately purchased plugin** plus GMCMotion and GMAS; see [GMC prerequisites](#prepare-a-gmc-project).
 
-**GMC requires a separately purchased and installed paid GMC plugin**, plus compatible GMCMotion and GMAS. Complete [GMC prerequisites](#prepare-a-gmc-project) before using that route. See [release progress](#final-release-scope) for final wizard and qualification work.
+Keeping your locomotion does not add the extras (slides, ragdoll, reactions, interactions, camera limits). They are built into a **new** pawn by [full animation setup](#create-a-character-with-full-animations).
 
-Keeping your locomotion does not automatically add the full GASP extras. Their planned generated-pawn setup is covered under [Optional GASP features](#optional-gasp-features); a custom pawn also needs the matching adapter, animation, physics and input integration.
+## Apply the checks
 
-## Read the setup results
+Work through section **02** from the top. Read each row, then press its **Apply**, or press **Apply required changes** to apply every required row at once (optional rows are skipped). Read any confirmation carefully, especially when a shared skeleton will change. Press **Check again** after changing something yourself.
 
-| **Result** | **What to do** |
-| --- | --- |
-| Ok | This item is ready. |
-| Fixable | Use Fix for this row, or Fix all to apply the available fixes. |
-| Optional | Read the explanation and choose its Fix only if you want that change. Fix all leaves optional settings alone. |
-| Info | Follow the row's guidance. This part needs your attention rather than an automatic edit. |
-| Blocked | Resolve the reason shown, then check the pawn again. |
-| Restart needed | Save your work and restart before continuing the affected checks. |
+Rows depend on one another: for example, *Jump input* and *Chooser* wait for the *Traversal Action component*. Applying the earlier rows unlocks the later ones. See [The setup window](#setup-window) for what each label means and [the setup rows](#understand-the-character-setup-rows) for what each row prepares.
 
-## Apply the fixes
+When everything reads **Ready**, save (**File > Save All**) and press Play.
 
-Set the GASP folder, choose your traversal style, then use **Fix all** or work through individual **Fix** buttons. Read any confirmation carefully, especially when a shared skeleton will change. Check the rows again after setup finishes.
+## Custom graphs
 
-A custom jump graph or animation rig may need a small manual connection. Follow the row's explanation instead of replacing your whole graph. Start with a simple test level before integrating traversal into a larger gameplay system.
+A custom jump graph or animation rig may need a small manual connection. The row says what to connect; follow it instead of replacing your whole graph. Start with a simple test level before integrating traversal into a larger gameplay system.

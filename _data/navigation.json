@@ -12,11 +12,7 @@
     "url": "/#choose-your-movement-system"
   },
   {
-    "title": "CMC extras now supported",
-    "url": "/#cmc-extras"
-  },
-  {
-    "title": "Final-release scope and progress",
+    "title": "What's in this build",
     "url": "/#final-release-scope"
   },
   {
@@ -24,12 +20,28 @@
     "url": "/#features"
   },
   {
+    "title": "The setup window",
+    "url": "/#setup-window"
+  },
+  {
     "title": "Use the setup wizard",
     "url": "/#use-the-setup-wizard"
   },
   {
-    "title": "Setup wizard screens",
+    "title": "Wizard screens: keep your pawn",
     "url": "/#setup-wizard-screens-1"
+  },
+  {
+    "title": "Wizard screens: a new pawn",
+    "url": "/#setup-wizard-screens-2"
+  },
+  {
+    "title": "Wizard screens: extras and review",
+    "url": "/#setup-wizard-screens-3"
+  },
+  {
+    "title": "Copy an engine pawn into your project",
+    "url": "/#copy-into-project"
   },
   {
     "title": "Set up an existing character",
@@ -64,8 +76,16 @@
     "url": "/#paired-interactions"
   },
   {
-    "title": "Retarget your own animations",
-    "url": "/#retarget-your-own-animations"
+    "title": "Create a first-person character",
+    "url": "/#create-a-first-person-character"
+  },
+  {
+    "title": "First-person camera functions",
+    "url": "/#first-person-camera-blueprint"
+  },
+  {
+    "title": "Blueprint reference",
+    "url": "/#blueprint-reference"
   },
   {
     "title": "Make an object traversable",
@@ -80,12 +100,12 @@
     "url": "/#use-mover"
   },
   {
-    "title": "Use GMC · paid dependency",
+    "title": "Use GMC (paid dependency)",
     "url": "/#prepare-a-gmc-project"
   },
   {
-    "title": "Create a first person character",
-    "url": "/#create-a-first-person-character"
+    "title": "Retarget your own animations (planned)",
+    "url": "/#retarget-your-own-animations"
   },
   {
     "title": "Test and troubleshoot",

@@ -1,6 +1,6 @@
 ## Neutral or Relaxed
 
-**Neutral** is the default style. Choose **Relaxed traversal** for the alternative authored set. Apply the **Chooser** row after changing style so the pawn uses that selection. Some Relaxed actions intentionally share Neutral clips.
+**Neutral** is the default style. Choose **Relaxed traversal** for the alternative authored set. Apply the **Chooser** row again after changing style so the pawn uses that selection. Some Relaxed actions intentionally share Neutral clips.
 
 ## Import for your character
 
@@ -14,7 +14,7 @@ Supported character families include UE5 Manny and Quinn, UE4 Mannequin, UEFN Ma
 
 ## Update an existing setup
 
-If the **Traversal animations** row reports that imported clips need updating, run its Fix again. This updates the baked animation assets; changing retarget settings alone does not update clips already imported.
+If the **Traversal animations** row reports that imported clips need updating, press its **Apply** again. This updates the baked animation assets; changing retarget settings alone does not update clips already imported.
 
 Use the **Chooser** row to update an older generated chooser. The setup asks before changing an edited or different chooser and keeps numbered backups when rebuilding. Read the prompt before replacing your own selection rules.
 
@@ -28,4 +28,4 @@ Try both walking and running approaches. Watch hands during their contact with t
 
 ## Beyond traversal clips
 
-[Full animation setup](#create-a-character-with-full-animations) prepares locomotion and supporting animation data for your selected movement system. The planned optional extras add slide, recovery and paired-interaction assets. You will also be able to [retarget your own sequences or montages](#retarget-your-own-animations) through an existing TA retargeter for the selected skeleton pair. All of these retargeting paths are offline.
+[Full animation setup](#create-a-character-with-full-animations) prepares locomotion and supporting animation data for your selected movement system. The [optional extras](#optional-gasp-features) add slide, recovery and paired-interaction assets. All retargeting is offline.

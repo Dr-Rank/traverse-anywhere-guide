@@ -1,10 +1,10 @@
-Choose this route for a prepared motion-matching animation library and a generated pawn for your selected mesh.
+Choose this route for a prepared motion-matching animation library and a **new generated pawn** for your selected mesh. Your existing pawns are only read, never changed.
 
 ## True offline retargeting — no dynamic runtime retargeting
 
 GASP & Traverse Anywhere prepares **retargeted animation assets for your chosen supported skeleton** during import. The generated character uses that target-skeleton library directly in game. It does not depend on **Retarget Pose From Mesh** to convert another skeleton's live animation pose every frame.
 
-GASP's runtime character-retargeting workflow uses a source character to drive a different mesh dynamically; Epic's [GASP MetaHuman example](https://dev.epicgames.com/documentation/en-us/metahuman/runtime-retargeting#runtimeparentskeletalmeshretargetinginthegameanimationsampleproject) documents this approach. TA's generated setup instead prepares the assets for the target skeleton ahead of gameplay.
+GASP's runtime character-retargeting workflow uses a source character to drive a different mesh dynamically; Epic's [GASP MetaHuman example](https://dev.epicgames.com/documentation/en-us/metahuman/runtime-retargeting#runtimeparentskeletalmeshretargetinginthegameanimationsampleproject) documents this approach. GASP & Traverse Anywhere instead prepares the assets for the target skeleton ahead of gameplay.
 
 | | GASP runtime character-retargeting workflow | GASP & Traverse Anywhere generated setup |
 | --- | --- | --- |
@@ -12,33 +12,30 @@ GASP's runtime character-retargeting workflow uses a source character to drive a
 | What the target plays | A pose dynamically retargeted from another skeleton. | Animation assets prepared for its own skeleton. |
 | Runtime cross-skeleton retarget layer | Used to drive the target mesh. | Not required by the generated setup. |
 
-Motion matching, IK and motion warping still operate during gameplay; they are separate from dynamic cross-skeleton retargeting. Supported skeleton pairs and target-mesh checks still apply. Keeping an existing character's locomotion does not automatically remove any runtime retargeting you already use there.
-
-## Choose one of four movement systems
-
-The **final setup plan** offers four dedicated choices: **Character Movement (CMC), GMC, Network Prediction Mover and Chaos Mover**. Choose the actual backend your game will use.
-
-Older builds may show only **CMC** and **Mover**, where Mover creates a Chaos pawn, or lack the completed four-choice wizard. That is an older setup limitation, not the intended final feature split. Check [release progress](#final-release-scope) before following planned controls.
-
-<div class="notice dependency"><strong>GMC prerequisite:</strong> GMC is a paid product that must be purchased, installed and enabled separately. Its TA route also requires compatible GMCMotion and GMAS. See <a href="#prepare-a-gmc-project">GMC setup</a>.</div>
+Motion matching, IK and motion warping still run during gameplay; they are separate from cross-skeleton retargeting.
 
 ## Prepare the library
 
-1. Open **Full animation setup** and select your movement system.
-2. Select the saved **target skeletal mesh** and supported **GASP source project folder**.
-3. In the planned wizard, choose any [optional GASP features](#optional-gasp-features). They are off by default; resolve the requirements for the features you select.
-4. Choose **Prepare animation assets** and wait for preparation and verification. The target and backend stay locked for that job.
+In the setup window, set the **GASP project** folder in step 1, then expand **Full animation setup: create a new pawn**. The [guided setup](#use-the-setup-wizard) fills these in for you when you choose a new pawn.
 
-## Install and try it
+1. Choose the movement system: **Character Movement (CMC)**, **Chaos Mover**, **NP Mover** or **GMC**. GMC needs its [separately purchased plugin](#prepare-a-gmc-project).
+2. Choose the **Target skeletal mesh**: the mesh you want to see in game.
+3. Under **Extras for the new pawn (optional)**, tick only what your game needs: Slide, Ragdoll and get-up, Physical hit reactions, Paired interactions, Camera limits (first person). **Please choose carefully:** extras are built into the new pawn when it is created and cannot be added or removed later. If an extra cannot be generated for your choice, the reason appears in amber underneath.
+4. **1. Preview changes** lists the source and destination without changing anything.
+5. **2. Prepare animation library** retargets and verifies the library. It can take several minutes; the target and backend stay locked while it runs, and **Cancel preparation** stops it.
+6. **3. Install verified library** becomes available once preparation is verified. It installs the library, the generated pawn and its GameMode.
 
-5. Choose **Install verified animation library** when the report allows it.
-6. Select the generated pawn and complete its setup rows. Existing CMC/Chaos output uses **BP_CMC** / **BP_ChaosMover**; use the reported pawn and game mode for your chosen backend.
-7. Set the generated **BP_GameMode** as your test map's **GameMode Override**, then press Play.
+![Full animation setup with extras ticked](assets/images/setup-window-plan.webp)
+
+## Try it
+
+1. Select the generated pawn in step 1 and apply its remaining checks.
+2. Open your test map, set the generated **BP_GameMode** as the map's **GameMode Override** in **World Settings**, then press Play.
 
 ## What the library contains
 
-The full setup prepares locomotion animations and the Animation Blueprint's supporting choosers, Pose Search data, mirroring and settings for the target. Selected extras also require their animation states, input and supporting physics/audio assets.
+Locomotion animations and the Animation Blueprint's supporting choosers, Pose Search data, mirroring and settings for the target, plus the animation states, input and physics assets for any extras you ticked.
 
-Generated libraries are separated by target mesh/skeleton and backend under **Content/TraverseAnywhere/FullAnimation**. Use the preparation report for the exact destination. An occupied destination is reported rather than overwritten; closing setup cancels an active preparation and retains its logs.
+Generated libraries are kept separate per target mesh, skeleton and backend under **Content/TraverseAnywhere/FullAnimation**. The preparation report gives the exact destination. An occupied destination is reported, not overwritten. Closing setup cancels an active preparation and keeps its logs.
 
-A generated pawn is a starting point. Bring across your own gameplay deliberately and test it before replacing an existing character.
+A generated pawn is a starting point. Bring your own gameplay across deliberately and test it before replacing an existing character.

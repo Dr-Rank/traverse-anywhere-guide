@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title: "CMC extras now supported"
+title: "CMC extras"
 permalink: /cmc-extras.html
-target: /#cmc-extras
+target: /#final-release-scope
 ---
