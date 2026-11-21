@@ -26,8 +26,8 @@ Prepare your character, then right-click a static mesh and choose **Make Travers
    | `TraversalGaspExtras` | Ragdoll, get-up, hit reactions, injuries and paired interactions shared by every backend | For the extras |
    | `TraversalCMCExtras` | Character Movement support for the extras, including slides | CMC with extras |
    | `TraversalMover` | Network Prediction Mover | NP Mover |
-   | `TraversalMoverChaos` | Chaos Mover | Chaos Mover |
-   | `TraversalMoverExtras` | Mover support for the extras | Either Mover with extras |
+   | `TraversalMoverChaos` | Chaos Mover, including its extras. Also needs `TraversalMover` and `TraversalGaspExtras` | Chaos Mover |
+   | `TraversalMoverExtras` | Network Prediction Mover support for the extras | NP Mover with extras |
    | `TraversalGMC` | General Movement Component | GMC (paid, separate) |
    | `TraversalGMCExtras` | GMC support for the extras | GMC with extras |
 

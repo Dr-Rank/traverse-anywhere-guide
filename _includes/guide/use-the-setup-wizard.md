@@ -17,7 +17,7 @@ The wizard follows one of two paths depending on your first answer. The [screens
 ## Path A: you already have a pawn
 
 1. **Step 1:** choose **I already have a pawn Blueprint**.
-2. **Step 2:** choose **Keep my locomotion and add traversal** to keep your walking, running and idle. Traversal plays through a montage slot and hands back to your locomotion afterwards. Or choose **Use full GASP motion matching** to build a separate generated pawn for your mesh; your pawn is only read.
+2. **Step 2:** choose **Keep my locomotion and add traversal** to keep your walking, running and idle. Traversal plays through a montage slot and hands back to your locomotion afterwards. Or choose **Use full GASP motion matching** to build a separate generated pawn for your mesh; your pawn is only read, but an engine or plugin **mesh** is copied into your project first.
 3. **Step 3:** pick your pawn. The wizard shows its mesh, skeleton and the movement adapter it detected. Under **Where to find them** it lists your own pawns, the Game Animation Sample's `SandboxCharacter_CMC` and `SandboxCharacter_Mover` in `/Game/Blueprints`, and the engine's Mover example pawns.
    - If the pawn is **engine or plugin content** (such as `/MoverExamples/Pawns/ChaosMannyPawn`) and you are keeping its locomotion, the wizard asks you to **Copy into my project** before Next unlocks. See [Copy an engine pawn into your project](#copy-into-project).
 4. **Step 4:** an existing pawn **keeps its movement**. The wizard never swaps movement components on a pawn you already have. To try another movement system, go back and choose a new pawn.
@@ -29,7 +29,7 @@ The wizard follows one of two paths depending on your first answer. The [screens
 
 1. **Step 1:** choose **I want to create a new pawn**.
 2. **Step 2:** **Use full GASP motion matching** is selected for you. *Keep my locomotion* is unavailable here, because a mesh on its own has no locomotion to keep; the page says so.
-3. **Step 3:** pick the **skeletal mesh** you want to see in game. Manny and Quinn can share a skeleton while using different meshes, so pick the mesh, not a skeleton preset. The Game Animation Sample's meshes live in `/Game/Characters/UE5_Mannequins/Meshes`; the Mover examples' mesh is `/MoverExamples/Characters/Mannequins/Meshes/SKM_Manny_Simple`. Engine and plugin meshes can be used as they are: the new pawn and its animations are created in your project and the mesh is not changed.
+3. **Step 3:** pick the **skeletal mesh** you want to see in game. Manny and Quinn can share a skeleton while using different meshes, so pick the mesh, not a skeleton preset. The Game Animation Sample's meshes live in `/Game/Characters/UE5_Mannequins/Meshes`; the Mover examples' mesh is `/MoverExamples/Characters/Mannequins/Meshes/SKM_Manny_Simple`. An engine or plugin mesh is **copied into your project first**, with one button: traversal adds an 'attach' bone to the mesh's skeleton, and engine content cannot be changed. Next unlocks once the copy exists. See [Copy an engine pawn or mesh into your project](#copy-into-project).
 4. **Step 4:** choose the movement system.
 
    | **Choice** | **When to pick it** |

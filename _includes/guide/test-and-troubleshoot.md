@@ -7,12 +7,11 @@ Use a simple block in a clear level. Try walking, running and sprinting approach
 | **What you see** | **What to check** |
 | --- | --- |
 | A row says **Needs attention** | Read its text: usually another row must be applied first, or the asset is read-only. Apply the earlier row, then **Check again**. |
-| A row says a pawn or mesh is **engine content** | Engine and plugin content is read-only. For the pawn, use **Copy into my project** ([how](#copy-into-project)). For a project pawn whose *mesh* is engine content, the copy button does not appear yet; use a mesh in your project. |
+| A row says a pawn or mesh is **engine content** | Engine and plugin content is read-only. For an engine pawn, use **Copy into my project** ([how](#copy-into-project)). For a project pawn whose *mesh* is engine content, give the pawn a mesh from your project, or build a new pawn in Full animation setup, which copies the mesh first. |
 | The Mover example pawns are missing from the pawn picker | Enable the Mover Examples plugin, then in the picker's settings tick **Engine Content** as well as **Plugin Content**. |
 | The Message Log opens during a copy | Normal. Unreal checks the copies as they are saved. See [What Unreal shows while it copies](#copy-into-project). |
-| The wizard shows the previous pawn | The wizard starts from your last plan. Pick the pawn again in step 3. |
 | Extras are not offered | Extras are built into **new** pawns only. Choose a new pawn in the wizard, or tick them in Full animation setup. An amber line under the checkboxes gives any reason one cannot be generated. |
-| Preview and Prepare are greyed out | Choose the **GASP project** folder and a saved **Target skeletal mesh** first. |
+| Preview and Prepare are greyed out | Choose the **GASP project** folder and a saved **Target skeletal mesh** first. An engine or plugin mesh must be copied into your project first (**Copy mesh into my project**). |
 | Full import will not install | Read its preparation report. Check the source folder, the saved target mesh, write access and whether the destination already holds a library. |
 | GMC unavailable or red in the GMC panel | Purchase and install the paid GMC plugin separately; enable compatible GMC, GMCMotion and GMAS, then rebuild and restart. GMCMotion alone does not provide GMC. |
 | Changes are lost after restarting Unreal | Applied changes are in memory until you save. **File > Save All**. |

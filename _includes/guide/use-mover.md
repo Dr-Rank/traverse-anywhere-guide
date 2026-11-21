@@ -2,7 +2,7 @@
 
 **Network Prediction Mover** and **Chaos Mover** are separate first-class routes alongside **CMC** and **GMC**. Both are offered in the wizard and in Full animation setup, with the same extras. Neither needs the paid GMC product.
 
-Copy `TraversalMover` (Network Prediction) or `TraversalMoverChaos` (Chaos), and `TraversalMoverExtras` if you want the extras. Do not install older separate adapter plugins alongside them.
+For **Network Prediction Mover**, copy `TraversalMover`, plus `TraversalGaspExtras` and `TraversalMoverExtras` for the extras. For **Chaos Mover**, copy `TraversalMover`, `TraversalMoverChaos` and `TraversalGaspExtras`; Chaos Mover's extras are built into `TraversalMoverChaos`. Do not install older separate adapter plugins alongside them.
 
 ## Try the engine's example pawns
 
