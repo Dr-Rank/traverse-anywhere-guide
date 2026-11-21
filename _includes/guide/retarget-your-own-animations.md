@@ -1,25 +1,33 @@
-<div class="notice dependency"><strong>Not in this build.</strong> This page describes a planned addition. The tester build does not include a step for retargeting your own animations yet. The retargeting described in <a href="#create-a-character-with-full-animations">full animation setup</a> and the traversal import is in this build.</div>
+Make copies of **your own** Animation Sequences and Montages for another skeleton, with the same retargeting GASP & Traverse Anywhere uses for its own imports. **True offline retargeting, no runtime retarget layer:** you get new animation assets on the target skeleton, and your originals are never changed.
 
-**True offline retargeting — no dynamic runtime retargeting.** The import already prepares GASP assets for your target skeleton to play directly. The planned step extends that to your own clips; it does not add a runtime retarget layer.
+## Retarget animations
 
-## Planned workflow
+1. In the Content Browser, select one or more **Animation Sequences** and **Montages**, all on the same skeleton.
+2. Right-click and choose **GASP & Traverse Anywhere > Retarget with Traverse Anywhere...**. You can also press **Retarget your own animations...** in the setup window (step 1), which uses the Content Browser selection.
+3. Choose the **Target skeletal mesh**: the character the copies should play on. The **Output folder** and **Name suffix** fill in for you (by default `/Game/TraverseAnywhere/Retargeted/<TargetSkeleton>` and `_<TargetSkeleton>`). Change them if you like.
+4. Press **Retarget**. The result line lists what was made; the Content Browser shows the new assets.
 
-1. Set up the skeleton pair through GASP & Traverse Anywhere's import.
-2. Select your source animation sequences or montages, including assets outside the GASP folders.
-3. Choose the source and target skeletons from the pairs already prepared.
-4. Choose a destination folder and run the offline batch.
-5. Inspect the result on your actual target mesh before using it in gameplay.
+<div class="shots"><figure><img src="assets/images/retarget-01-menu.webp" alt="The Retarget with Traverse Anywhere entry in the Content Browser menu" width="290" height="682" loading="lazy"><figcaption><strong>Right-click.</strong> The entry appears for any selection of Animation Sequences and Montages.</figcaption></figure><figure><img src="assets/images/retarget-02-dialog.webp" alt="The retarget dialog with a target chosen" width="1000" height="560" loading="lazy"><figcaption><strong>Choose the target.</strong> Here two of the engine's Mover Example animations (UE5 Manny) onto the UE4 mannequin.</figcaption></figure></div>
 
-If no retargeter exists for the selected pair, the step will refuse and explain why. It is not a promise of automatic support for every skeleton.
+![The result: two sequences and a montage retargeted and saved](assets/images/retarget-03-done.webp)
 
-## Corrections it will reuse from the import
+## What it does
 
-| Retargeting work | Purpose |
-| --- | --- |
-| Finger retargeting | Keep useful finger posing on supported rigs. |
-| IK-bone pinning | Keep the IK reference bones aligned with their targets. |
-| Hand-contact correction | Keep authored hand contact accurate. |
-| Knee-contact correction | Improve knee contact in poses such as physical recovery. |
-| Absolute vertical pelvis motion | Keep the authored climb height instead of scaling it away. |
+- Builds a Traverse Anywhere retargeter for this **pair of skeletons**, in its own folder under `/Game/TraverseAnywhere/Retargeters/<Source>_To_<Target>`, and reuses it next time. You can open and tune it like any IK Retargeter.
+- Bakes each animation with the corrections the imports use: **finger retargeting**, **IK-bone pinning**, **hand contact correction**, **absolute vertical pelvis motion** (a climb or jump keeps its authored height) and **knee contact correction** (kneeling knees keep their floor contact).
+- A **montage** brings the sequences it plays. Additive animations keep their additive settings, with their base pose retargeted too.
+- The copies, the retargeter and its rigs are **saved**. An existing copy is never overwritten; a run that fails keeps nothing.
 
-Retargeting will be **offline only**, write to a folder you choose, and never overwrite your source animations.
+## Check the result
+
+![Source (dark, UE5 Manny) and retarget (white, UE4 mannequin) at the same moments](assets/images/retarget-04-compare.webp)
+
+Play the copies on your character before using them in gameplay, especially hands, fingers, knees and feet. Quality depends on the source motion and on how different the two characters' proportions are. Above, the engine's Mover Example vault, crouch and jog on UE5 Manny (dark) and their retargets on the UE4 mannequin (white), at the same moments.
+
+## Limits
+
+- **Both skeletons must be ones Traverse Anywhere supports:** UE5 Manny and Quinn, UE4 Mannequin, UEFN Mannequin, and male and female Animan. Any other pair is refused with the reason.
+- The animations must all be on **one skeleton**, and the target must be on a **different** one.
+- Animation Sequences and Montages only; Blend Spaces and other animation assets are not converted.
+- The animations' skeleton needs a mesh in the project (its preview mesh, or any mesh on it): the retargeter reads its reference pose.
+- Knee contact correction is qualified on Manny targets; on other targets, check kneeling poses.

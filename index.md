@@ -177,7 +177,7 @@ permalink: /
 {% capture chapter %}{% include guide/prepare-a-gmc-project.md %}{% endcapture %}{{ chapter | markdownify }}
 <div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>37</span></div></section>
 
-<section class="sheet" id="retarget-your-own-animations" aria-label="Retarget your own animations (planned)"><h2>Retarget your own animations (planned)</h2>
+<section class="sheet" id="retarget-your-own-animations" aria-label="Retarget your own animations"><h2>Retarget your own animations</h2>
 {% capture chapter %}{% include guide/retarget-your-own-animations.md %}{% endcapture %}{{ chapter | markdownify }}
 <div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>38</span></div></section>
 

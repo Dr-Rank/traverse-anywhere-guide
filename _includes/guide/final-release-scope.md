@@ -15,6 +15,7 @@ This guide describes the current tester build. Everything below is in that build
 | Ragdoll and recovery | Active ragdoll, knockdown, physical and motion-matched get-up, and death ragdolls. |
 | Physical reactions | Physics Control hit reactions without a full knockdown, and injury-dependent strength. |
 | Paired interactions | Shove, tackle and takedown with participant coordination and return of control. |
+| Your own animations | [Retarget your own Animation Sequences and Montages](#retarget-your-own-animations) onto another supported skeleton with the same corrections the imports use, offline. |
 | First person | An owner-only body, a steady camera that follows the head through traversal, slides, reactions, ragdoll and get-up, configurable look limits, and [Blueprint camera functions](#first-person-camera-blueprint). |
 | Multiplayer | Traversal and the extras replicate for the server, the owning player and remote observers. |
 
@@ -28,7 +29,6 @@ Each backend's extras pass our automated gameplay suites in the editor: slides, 
 
 | Item | Status |
 | --- | --- |
-| [Retargeting your own animations](#retarget-your-own-animations) | Planned. The import's retargeting already works for the GASP library; a step for your own sequences and montages is not in this build. |
 | CMC slide body lean | CMC slides are animated, but do not yet lean the body into the slope the way the Mover slides do. |
 | Mixed-backend paired interactions | Each backend's interactions are tested with two pawns of the same backend. CMC against GMC, or Mover against CMC, is not established. |
 

@@ -56,6 +56,7 @@ Open **Tools > GASP & Traverse Anywhere** in the level editor, or press **GASP &
 | Climb objects in my level | [Make an object traversable](#make-an-object-traversable) |
 | Adjust a generated object | [Adjust proxies and ledges](#adjust-proxies-and-ledges) |
 | Add slides, physical reactions or interactions | [Optional GASP features](#optional-gasp-features) |
+| Retarget my own animations | [Retarget your own animations](#retarget-your-own-animations) |
 | Play in first person | [Create a first-person character](#create-a-first-person-character) |
 | Drive the camera, ragdoll or interactions from Blueprint | [First-person camera functions](#first-person-camera-blueprint) and [Blueprint reference](#blueprint-reference) |
 | Solve a problem | [Test and troubleshoot](#test-and-troubleshoot) |

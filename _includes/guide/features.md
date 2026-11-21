@@ -13,6 +13,7 @@ Explore the traversal tools and the feature set, then follow the setup route for
 | Optional physical features | Three slide types, ragdoll, knockdown and get-up, death ragdolls, hit reactions and injuries. |
 | Paired interactions | Shove, tackle and takedown with participant coordination. |
 | First-person presentation | An owner-only body, head following through physical motion, configurable look limits and Blueprint camera functions. |
+| Your own animations | Retarget your own sequences and montages onto another supported skeleton, offline, with finger, hand, knee and vertical-motion corrections. |
 | Inspection and integration | Ledge diagnostics, custom queries, traversal events and a [Blueprint reference](#blueprint-reference). |
 
 The feature pictures on the next pages are illustrations, not exact gameplay frames. Original mesh renders include the blue Animan male. Proxy overlays are hidden in gameplay.
