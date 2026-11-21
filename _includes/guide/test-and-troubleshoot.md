@@ -6,6 +6,7 @@ Use a simple block in a clear level. Try walking, running and sprinting approach
 
 | **What you see** | **What to check** |
 | --- | --- |
+| The project will not compile after copying the plugins: *Could not find definition for module 'GMCMotion'* (or another module) | A plugin in your project's Plugins folder needs something that is not installed. Remove `TraversalGMC` and `TraversalGMCExtras` unless the project has GMC, GMCMotion and GMAS. A Blueprint-only project compiles every plugin in Plugins, enabled or not, and also every engine Marketplace plugin, so the module the message names may belong to another product. |
 | A row says **Needs attention** | Read its text: usually another row must be applied first, or the asset is read-only. Apply the earlier row, then **Check again**. |
 | A row says a pawn or mesh is **engine content** | Engine and plugin content is read-only. For an engine pawn, use **Copy into my project** ([how](#copy-into-project)). For a project pawn whose *mesh* is engine content, give the pawn a mesh from your project, or build a new pawn in Full animation setup, which copies the mesh first. |
 | The Mover example pawns are missing from the pawn picker | Enable the Mover Examples plugin, then in the picker's settings tick **Engine Content** as well as **Plugin Content**. |

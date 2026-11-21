@@ -33,6 +33,8 @@ Prepare your character, then right-click a static mesh and choose **Make Travers
 
    Keep **one copy** of each plugin. Never leave a second copy elsewhere in the project or in the engine.
 
+   <div class="notice dependency"><strong>Copy the GMC plugins only if your project has GMC.</strong> <code>TraversalGMC</code> and <code>TraversalGMCExtras</code> (kept in <code>OptionalPlugins/GMC</code> in the tester download) cannot compile without GMC, GMCMotion and GMAS. A Blueprint-only project compiles <strong>every</strong> plugin in its Plugins folder, enabled or not, so a GMC plugin without GMC stops the whole project building with <em>Could not find definition for module 'GMCMotion'</em>.</div>
+
 3. Open the project and let it compile. Under **Edit > Plugins**, check that **GASP & Traverse Anywhere** and the backend plugins you copied are enabled, then restart if Unreal asks.
 
 4. For animation imports, have a separately obtained, extracted **Unreal Engine 5.8 Game Animation Sample (GASP)** project on disk. You select its folder as the **GASP project** in setup. You can save it in **Editor Preferences > Plugins > Traverse Anywhere Import**.
