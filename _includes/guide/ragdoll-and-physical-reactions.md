@@ -6,6 +6,8 @@ The server knocks the pawn down into an active ragdoll, and the pawn recovers wi
 
 Get-up animations are chosen from face-up and face-down clips using pose history. The target mesh needs a fitted physics asset, the Physics Control profile and the retargeted recovery library, all of which full animation setup prepares.
 
+On meshes with shorter arms than GASP's, such as the UE4 female mannequin, the import turns the shoulder and leans the upper body a little where a hand pushes on the floor, so the hands reach the ground. Measured on the four get-ups, Quinn and the UE4 male mannequin keep the same floor contact as GASP's own character. The UE4 female keeps it on most frames, but her arms are too short to reach on a few push-off frames, where a hand can still sit several centimetres above the floor. Pawns imported before this build keep their earlier get-ups until you import them again.
+
 **Players** get up by pressing the get-up input once they are still on the floor; **AI pawns** get up by themselves after a short delay. Both are settings on the ragdoll component.
 
 ## Hit reactions and injuries

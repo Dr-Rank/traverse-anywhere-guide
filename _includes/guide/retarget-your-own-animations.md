@@ -14,7 +14,7 @@ Make copies of **your own** Animation Sequences and Montages for another skeleto
 ## What it does
 
 - Builds a Traverse Anywhere retargeter for this **pair of skeletons**, in its own folder under `/Game/TraverseAnywhere/Retargeters/<Source>_To_<Target>`, and reuses it next time. You can open and tune it like any IK Retargeter.
-- Bakes each animation with the corrections the imports use: **finger retargeting** (each finger bends as in the source, and on a planted hand its tip keeps the source's contact), **IK-bone pinning**, **hand contact correction**, **absolute vertical pelvis motion** (a climb or jump keeps its authored height) and **knee contact correction** (kneeling knees keep their floor contact).
+- Bakes each animation with the corrections the imports use: **finger retargeting** (each finger bends as in the source, and on a planted hand its tip keeps the source's contact), **IK-bone pinning**, **hand contact correction** (a planted hand stays at the source's height; if the character's arm is too short to reach, the shoulder turns and the upper body leans a little, as the runtime traversal correction does), **absolute vertical pelvis motion** (a climb or jump keeps its authored height) and **knee contact correction** (kneeling knees keep their floor contact).
 - A **montage** brings the sequences it plays. Additive animations keep their additive settings, with their base pose retargeted too.
 - The copies, the retargeter and its rigs are **saved**. An existing copy is never overwritten; a run that fails keeps nothing.
 
