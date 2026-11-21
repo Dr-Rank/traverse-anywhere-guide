@@ -22,6 +22,10 @@ Make copies of **your own** Animation Sequences and Montages for another skeleto
 
 ![Source (dark, UE5 Manny) and retarget (white, UE4 mannequin) at the same moments](assets/images/retarget-04-compare.webp)
 
+![Hands close up: source (left), UE4 retarget (middle), UEFN retarget (right); vault hand plant on top, idle below](assets/images/retarget-05-hands.webp)
+
+Hands close up, with the same Mover Example clips: UE5 Manny (left) and the retargets on the UE4 mannequin (middle) and UEFN mannequin (right). Top: the vault's hand plant, flat on the floor at the right height on both targets. Bottom: idle. Measured over jog, crouch, idle and vault frames, each finger's total bend stays within a few degrees of the source on UE4; on UEFN, whose hand is shaped differently, the pinky can curl up to about 8° more and a planted hand's index and pinky lie a little flatter.
+
 Play the copies on your character before using them in gameplay, especially hands, fingers, knees and feet. Quality depends on the source motion and on how different the two characters' proportions are. Above, the engine's Mover Example vault, crouch and jog on UE5 Manny (dark) and their retargets on the UE4 mannequin (white), at the same moments.
 
 ## Limits
