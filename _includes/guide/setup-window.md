@@ -10,10 +10,12 @@ The setup window is where every pawn change is made. It checks the chosen pawn, 
 | **Your plan** (green) | Appears after the wizard: your movement system, view, animation route and extras. It also says *Nothing has been changed yet*. |
 | **NEXT** bar | A one-line summary: how many checks need attention, need an action or are ready. |
 | **01 Setup Wizard - Step 1: Choose your Pawn** | Pick the **Pawn Blueprint**, the **GASP project** folder and where imported clips go (**Import to**). The mesh, skeleton and Animation Blueprint read from the pawn are shown underneath. **Use Relaxed traversal animations** switches the traversal style. |
-| **Full animation setup: create a new pawn** | Expand it to generate a new pawn with a complete GASP animation library: pick the movement system, the **Target skeletal mesh** and the extras, then **1. Preview changes**, **2. Prepare animation library** and **3. Install verified library**. See [full animation setup](#create-a-character-with-full-animations). |
-| **02 Review and make changes to your current setup** | One row per check for the chosen pawn, each with its own **Apply** button. |
+| **Full animation setup: create a new pawn** | Open when the window opens (a keep-your-locomotion plan folds it away). Use it to generate a new pawn with a complete GASP animation library: pick the movement system, the **Target skeletal mesh** and the extras, then **1. Preview changes**, **2. Prepare animation library** and **3. Install verified library**. See [full animation setup](#create-a-character-with-full-animations). |
+| **02 Review and make changes to your current setup** | One row per check for the chosen pawn, each with its own **Apply** button. **If you are starting with a new pawn, don't follow these steps yet:** use the guided setup or Full animation setup in step 1 first. |
 | **Apply required changes** / **Check again** | Apply every *required* change in one go, or re-run the checks after you have changed something yourself. |
 | **First-person variant** | Further down: **Create first-person variant** once traversal setup is complete. See [first-person setup](#create-a-first-person-character). |
+
+If your plan builds full GASP from an existing pawn, Full animation setup keeps that pawn's movement system: choosing another one shows an amber warning, and Preview and Prepare stay greyed out until the two match.
 
 If you pick an engine or plugin pawn (for example one of the Mover examples), step 1 also shows **Copy into my project**. See [Copy an engine pawn into your project](#copy-into-project).
 

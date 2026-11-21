@@ -13,6 +13,8 @@ Use a simple block in a clear level. Try walking, running and sprinting approach
 | The Mover example pawns are missing from the pawn picker | Enable the Mover Examples plugin, then in the picker's settings tick **Engine Content** as well as **Plugin Content**. |
 | The Message Log opens during a copy | Normal. Unreal checks the copies as they are saved. See [What Unreal shows while it copies](#copy-into-project). |
 | Extras are not offered | Extras are built into **new** pawns only. Choose a new pawn in the wizard, or tick them in Full animation setup. An amber line under the checkboxes gives any reason one cannot be generated. |
+| *Your pawn moves with X, not Y* | The movement system you chose does not match the pawn. Choose the pawn's own movement system, choose a pawn that uses the one you want, or set up a new pawn from a mesh. |
+| A movement choice is greyed out in the wizard | With an existing pawn, only the movement system that pawn uses can be chosen. |
 | Preview and Prepare are greyed out | Choose the **GASP project** folder and a saved **Target skeletal mesh** first. An engine or plugin mesh must be copied into your project first (**Copy mesh into my project**). |
 | Full import will not install | Read its preparation report. Check the source folder, the saved target mesh, write access and whether the destination already holds a library. |
 | GMC unavailable or red in the GMC panel | Purchase and install the paid GMC plugin separately; enable compatible GMC, GMCMotion and GMAS, then rebuild and restart. GMCMotion alone does not provide GMC. |
