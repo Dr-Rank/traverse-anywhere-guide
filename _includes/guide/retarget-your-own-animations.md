@@ -14,7 +14,7 @@ Make copies of **your own** Animation Sequences and Montages for another skeleto
 ## What it does
 
 - Builds a Traverse Anywhere retargeter for this **pair of skeletons**, in its own folder under `/Game/TraverseAnywhere/Retargeters/<Source>_To_<Target>`, and reuses it next time. You can open and tune it like any IK Retargeter.
-- Bakes each animation with the corrections the imports use: **finger retargeting**, **IK-bone pinning**, **hand contact correction**, **absolute vertical pelvis motion** (a climb or jump keeps its authored height) and **knee contact correction** (kneeling knees keep their floor contact).
+- Bakes each animation with the corrections the imports use: **finger retargeting** (each finger bends as in the source, and on a planted hand its tip keeps the source's contact), **IK-bone pinning**, **hand contact correction**, **absolute vertical pelvis motion** (a climb or jump keeps its authored height) and **knee contact correction** (kneeling knees keep their floor contact).
 - A **montage** brings the sequences it plays. Additive animations keep their additive settings, with their base pose retargeted too.
 - The copies, the retargeter and its rigs are **saved**. An existing copy is never overwritten; a run that fails keeps nothing.
 
@@ -22,9 +22,11 @@ Make copies of **your own** Animation Sequences and Montages for another skeleto
 
 ![Source (dark, UE5 Manny) and retarget (white, UE4 mannequin) at the same moments](assets/images/retarget-04-compare.webp)
 
-![Hands close up: source (left), UE4 retarget (middle), UEFN retarget (right); vault hand plant on top, idle below](assets/images/retarget-05-hands.webp)
+![Hands close up: source (left), UE4 retarget (middle), UEFN retarget (right). Rows: vault hand plant from the front, the same plant from the side, idle](assets/images/retarget-05-hands-v2.webp)
 
-Hands close up, with the same Mover Example clips: UE5 Manny (left) and the retargets on the UE4 mannequin (middle) and UEFN mannequin (right). Top: the vault's hand plant. Bottom: idle. The palm is held where the source puts it (within 0.5 cm through the plant), and each finger bends as it does in the source. The fingertips can still land a little differently, because the copy keeps how each finger bends, not where its tip ends up, and these hands are shaped differently: in this vault the UE4 thumb tip sits about 2 cm lower than Manny's, so it dips slightly into the surface, and the pinky about 2.5 cm higher. On UEFN the pinky can curl up to about 8° more. Traverse Anywhere's own traversal animations use the same finger step.
+Hands close up, with the same Mover Example clips: UE5 Manny (left) and the retargets on the UE4 mannequin (middle) and UEFN mannequin (right). Top: the vault's hand plant. Middle: the same plant from the side, which shows each joint's bend. Bottom: idle.
+
+Each finger bends the same way as in the source; none is bent back. While a hand is planted (still on a surface), the fingertips also keep the source's contact: on this vault every UE4 fingertip lands within 0.5 cm of Manny's, where copying the bends alone left the thumb about 2 cm into the surface. A moving hand keeps the copied bends unchanged. Traverse Anywhere's own traversal and full animation imports use the same finger step; animations you imported before this build keep the earlier fingers until you import them again.
 
 Play the copies on your character before using them in gameplay, especially hands, fingers, knees and feet. Quality depends on the source motion and on how different the two characters' proportions are. Above, the engine's Mover Example vault, crouch and jog on UE5 Manny (dark) and their retargets on the UE4 mannequin (white), at the same moments.
 
