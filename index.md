@@ -25,7 +25,7 @@ permalink: /
 <div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>5</span></div></section>
 
 <section class="sheet" id="features-character-setup" aria-label="Features character setup"><h2>Features character setup</h2>
-<figure><img src="assets/images/11-guided-character-setup.webp" alt="Guided character setup" width="1440" height="810"><figcaption><strong>Guided character setup.</strong> See what is ready, apply supported rows one at a time or use Apply required changes. Backup reminders and confirmations identify shared changes; optional rows stay yours to choose.</figcaption></figure>
+<figure><a href="assets/images/wizard-redesign-01-pawn.webp"><img src="assets/images/wizard-redesign-01-pawn.webp" alt="Current guided pawn setup page" width="1100" height="682" loading="lazy"></a><figcaption><strong>Guided pawn setup.</strong> Choose an existing Blueprint or start from a skeletal mesh. The wizard shows the planned changes for review and runs the required checks during setup.</figcaption></figure>
 <figure><img src="assets/images/12-keep-your-locomotion.webp" alt="Traversal with your locomotion" width="1440" height="810"><figcaption><strong>Traversal with your locomotion.</strong> Add traversal through a montage slot while keeping your character&#x27;s normal locomotion. Supported jump setup tries traversal first and falls back to ordinary jump when no action can start.</figcaption></figure>
 
 <div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>6</span></div></section>
@@ -129,7 +129,7 @@ permalink: /
 {% capture chapter %}{% include guide/choose-and-manage-your-traversal-animations.md %}{% endcapture %}{{ chapter | markdownify }}
 <div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>25</span></div></section>
 
-<section class="sheet" id="create-a-character-with-full-animations" aria-label="Create a character with full animations"><h2>Create a character with full animations</h2>
+<section class="sheet wizard-sheet" id="create-a-character-with-full-animations" aria-label="Create a pawn with full animations"><h2>Create a pawn with full animations</h2>
 {% capture chapter %}{% include guide/create-a-character-with-full-animations.md %}{% endcapture %}{{ chapter | markdownify }}
 <div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>26</span></div></section>
 

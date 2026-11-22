@@ -14,23 +14,22 @@ GASP's runtime character-retargeting workflow uses a source character to drive a
 
 Motion matching, IK and motion warping still run during gameplay; they are separate from cross-skeleton retargeting.
 
-## Prepare the library
+## Create the pawn in guided setup
 
-For guided generation, choose **Create a new pawn from a mesh** in the [setup wizard](#use-the-setup-wizard). The wizard prepares, verifies and installs the library, then runs the pawn checks. For the manual route below, open **Advanced tools**, set the **GASP project** folder and expand **Full animation setup: create a new pawn**.
+1. Open **Tools > GASP & Traverse Anywhere**. Choose **Create a new pawn from a mesh**, select the skeletal mesh and choose a movement system.
+2. On **Animation**, select the source Game Animation Sample project and the traversal style. Use **Copy mesh into my project** if setup asks for a writable copy.
+3. On **View & Extras**, choose first or third person and the extras you want on the new pawn. First person also offers camera limits. To change the generated extras later, set up a new pawn.
+4. On **Review your setup**, select **Set up my pawn**. Watch conversion, preparation and verification. Select **Install verified GASP library** when prompted. If Unreal asks you to restart, reopen the same project and choose **Continue setup**.
 
-1. Choose the movement system: **Character Movement (CMC)**, **Chaos Mover**, **NP Mover** or **GMC**. GMC needs its [separately purchased plugin](#prepare-a-gmc-project).
-2. Choose the **Target skeletal mesh**: the mesh you want to see in game. If it is engine or plugin content (for example the Mover examples' `SKM_Manny_Simple`), press **Copy mesh into my project** first; the new pawn is built on the copy. See [the copy step](#copy-into-project).
-3. Under **Extras for the new pawn (optional)**, tick only what your game needs: Slide, Ragdoll and get-up, Physical hit reactions, Paired interactions, Camera limits (first person). **Please choose carefully:** extras are built into the new pawn when it is created and cannot be added or removed later. If an extra cannot be generated for your choice, the reason appears in amber underneath.
-4. **1. Preview changes** lists the source and destination without changing anything.
-5. **2. Prepare animation library** retargets and verifies the library. It can take several minutes; the target and backend stay locked while it runs, and **Cancel preparation** stops it.
-6. **3. Install verified library** becomes available once preparation is verified. It installs the library, the generated pawn and its GameMode.
+<div class="shots"><figure><a class="wizard-shot" href="assets/images/wizard-redesign-03-view-and-extras.webp"><img src="assets/images/wizard-redesign-03-view-and-extras.webp" alt="Current wizard View and Extras page showing a first-person pawn with all extras selected" width="1100" height="682" loading="lazy"></a><figcaption><strong>View &amp; Extras.</strong> Choose the view and extras before the wizard generates the pawn. Click or tap the screenshot for the full-size image.</figcaption></figure></div>
 
-![Full animation setup with extras ticked](assets/images/setup-window-plan.webp)
+## Try the generated pawn
 
-## Try it
+When **Guided setup is complete** appears, use **Open pawn** to inspect the Blueprint or **Open test level** to choose a map. For a quick playtest, select the generated **BP_GameMode** in the map’s **GameMode Override** in **World Settings**, then press Play.
 
-1. Select the generated pawn in step 1 and apply its remaining checks.
-2. Open your test map, set the generated **BP_GameMode** as the map's **GameMode Override** in **World Settings**, then press Play.
+## Run the steps manually
+
+Open **Advanced tools** and expand **Full animation setup: create a new pawn**. Set the **GASP project**, select the movement system and saved target mesh, and choose the extras. Use **Preview changes**, **Prepare animation library** and **Install verified library** in that order. You can then select the generated pawn and run the remaining checks in Advanced tools. See [The setup window](#setup-window).
 
 ## What the library contains
 

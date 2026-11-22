@@ -54,7 +54,7 @@ Open **Tools > GASP & Traverse Anywhere** in the level editor, or press **GASP &
 | Be guided through setup | [Use the setup wizard](#use-the-setup-wizard) |
 | Set up an engine example pawn | [Copy an engine pawn into your project](#copy-into-project) |
 | Keep my character's locomotion | [Set up an existing character](#set-up-an-existing-character) |
-| Prepare a full animation library | [Create a character with full animations](#create-a-character-with-full-animations) |
+| Prepare a full animation library | [Create a pawn with full animations](#create-a-character-with-full-animations) |
 | Climb objects in my level | [Make an object traversable](#make-an-object-traversable) |
 | Adjust a generated object | [Adjust proxies and ledges](#adjust-proxies-and-ledges) |
 | Add slides, physical reactions or interactions | [Optional GASP features](#optional-gasp-features) |
