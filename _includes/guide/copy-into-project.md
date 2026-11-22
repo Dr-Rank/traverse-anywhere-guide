@@ -7,7 +7,7 @@ There are two cases:
 
 ## Find the engine example pawns
 
-1. Enable the **Mover Examples** plugin (**Edit > Plugins**) and restart.
+1. Enable your Traverse Anywhere Mover plugin (**Edit > Plugins**) and restart. Unreal enables **Mover Examples** automatically.
 2. In the Content Browser, open **Settings** and turn on **Show Engine Content** and **Show Plugin Content**. The pawns are in `/MoverExamples/Pawns`: `AnimatedMannyPawn` (Network Prediction Mover) and `ChaosMannyPawn` (Chaos Mover).
 3. In setup's own pawn picker, open the picker's settings (the cog beside its search box) and tick **Engine Content** and **Plugin Content**. The Mover examples come from an engine plugin, so **Plugin Content alone is not enough**.
 

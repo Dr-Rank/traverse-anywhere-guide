@@ -36,7 +36,7 @@ Prepare your character, then right-click a static mesh and choose **Make Travers
 
 3. Open the project and let it compile. Under **Edit > Plugins**, check that **GASP & Traverse Anywhere** and the backend plugins you copied are enabled, then restart if Unreal asks.
 
-   <div class="notice"><strong>Using NP Mover or Chaos Mover?</strong> While you are in <strong>Edit &gt; Plugins</strong>, also enable Epic's <strong>Mover Examples</strong> plugin. It adds Epic's example base pawns, <code>AnimatedMannyPawn</code> (Network Prediction Mover) and <code>ChaosMannyPawn</code> (Chaos Mover), in <code>/MoverExamples/Pawns</code>. You can add Traverse Anywhere to either one: setup copies it into your project first. See <a href="#use-mover">Use NP Mover or Chaos Mover</a>.</div>
+   <div class="notice"><strong>Using NP Mover or Chaos Mover?</strong> Enabling either Traverse Anywhere Mover plugin also enables Epic’s <strong>Mover Examples</strong> plugin. After restarting Unreal, you can find the example base pawns, <code>AnimatedMannyPawn</code> (Network Prediction Mover) and <code>ChaosMannyPawn</code> (Chaos Mover), in <code>/MoverExamples/Pawns</code>. You can add Traverse Anywhere to either one: setup copies it into your project first. See <a href="#use-mover">Use NP Mover or Chaos Mover</a>.</div>
 
 4. For animation imports, have a separately obtained, extracted **Unreal Engine 5.8 Game Animation Sample (GASP)** project on disk. You select its folder as the **GASP project** in setup. You can save it in **Editor Preferences > Plugins > Traverse Anywhere Import**.
 

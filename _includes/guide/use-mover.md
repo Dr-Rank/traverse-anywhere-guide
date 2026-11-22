@@ -6,7 +6,7 @@ For **Network Prediction Mover**, copy `Traversal`, `TraversalGaspExtras` and `T
 
 ## Try the engine's example pawns
 
-To get Epic's example pawns for NP Mover or Chaos Mover, enable the **Mover Examples** plugin (**Edit > Plugins**) when you enable the GASP & Traverse Anywhere plugins, then restart. It adds the base pawns `AnimatedMannyPawn` (Network Prediction Mover) and `ChaosMannyPawn` (Chaos Mover) in `/MoverExamples/Pawns`, and you can add Traverse Anywhere to either. They are engine content, so setup copies one into your project before changing it. See [Copy an engine pawn into your project](#copy-into-project).
+Enabling either Traverse Anywhere Mover plugin automatically enables Epic’s **Mover Examples** plugin. After restarting Unreal, you can find the base pawns `AnimatedMannyPawn` (Network Prediction Mover) and `ChaosMannyPawn` (Chaos Mover) in `/MoverExamples/Pawns`, and you can add Traverse Anywhere to either. They are engine content, so setup copies one into your project before changing it. See [Copy an engine pawn into your project](#copy-into-project).
 
 ## Select the actual pawn
 
