@@ -12,3 +12,15 @@
 .shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 16px;align-items:start}.shots figure{margin:0}.shots figure img{aspect-ratio:auto;border:1px solid #c5d2da}@media(max-width:650px){.shots{grid-template-columns:1fr}}@media print{.shots{gap:5mm}}
 .sheet p>img{display:block;max-width:100%;height:auto;margin:10px 0 18px;border:1px solid #c5d2da}.sheet p>img[src*="toolbar"]{border:0}
 td code{overflow-wrap:normal;word-break:normal;white-space:nowrap}
+
+/* Keep wizard screenshots readable on the web while preserving the printed guide layout. */
+@media screen {
+  .wizard-sheet { min-height: 0; }
+  .wizard-sheet .shots { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .wizard-sheet .wizard-shot { display: block; }
+  .wizard-sheet .wizard-shot:focus-visible { outline: 3px solid #007f94; outline-offset: 3px; }
+}
+@media screen and (max-width: 650px) {
+  .wizard-sheet .shots { margin-inline: -12px; }
+  .wizard-sheet figcaption { padding-inline: 12px; }
+}

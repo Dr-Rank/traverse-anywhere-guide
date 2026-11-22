@@ -98,19 +98,19 @@ permalink: /
 {% capture chapter %}{% include guide/use-the-setup-wizard.md %}{% endcapture %}{{ chapter | markdownify }}
 <div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>18</span></div></section>
 
-<section class="sheet" id="setup-wizard-screens-1" aria-label="Pawn and movement"><h2>Wizard screens: Pawn and movement</h2>
+<section class="sheet wizard-sheet" id="setup-wizard-screens-1" aria-label="Pawn and movement"><h2>Wizard screens: Pawn and movement</h2>
 <p>The wizard reads an existing pawn or starts from a skeletal mesh. This example uses Manny with Chaos Mover.</p>
-<div class="shots"><figure><a href="assets/images/wizard-redesign-01-pawn.webp"><img src="assets/images/wizard-redesign-01-pawn.webp" alt="Your pawn" width="1100" height="682" loading="lazy"></a><figcaption><strong>Your pawn.</strong> Choose an existing Blueprint or a mesh and movement system for a new pawn.</figcaption></figure></div>
+<div class="shots"><figure><a class="wizard-shot" href="assets/images/wizard-redesign-01-pawn.webp"><img src="assets/images/wizard-redesign-01-pawn.webp" alt="Your pawn" width="1100" height="682" loading="lazy"></a><figcaption><strong>Your pawn.</strong> Choose an existing Blueprint or a mesh and movement system for a new pawn.</figcaption></figure></div>
 <div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>19</span></div></section>
 
-<section class="sheet" id="setup-wizard-screens-2" aria-label="Animation and extras"><h2>Wizard screens: Animation and extras</h2>
+<section class="sheet wizard-sheet" id="setup-wizard-screens-2" aria-label="Animation and extras"><h2>Wizard screens: Animation and extras</h2>
 <p>Select a traversal style independently of locomotion, then choose how the player sees and controls the pawn.</p>
-<div class="shots"><figure><a href="assets/images/wizard-redesign-02-animation.webp"><img src="assets/images/wizard-redesign-02-animation.webp" alt="Animation" width="1100" height="682" loading="lazy"></a><figcaption><strong>Animation.</strong> Pick the traversal montages and point the wizard to your Game Animation Sample project.</figcaption></figure><figure><a href="assets/images/wizard-redesign-03-view-and-extras.webp"><img src="assets/images/wizard-redesign-03-view-and-extras.webp" alt="View and extras" width="1100" height="682" loading="lazy"></a><figcaption><strong>View and extras.</strong> This first-person Chaos setup has all extras selected. Scroll down for the first-person camera limits.</figcaption></figure></div>
+<div class="shots"><figure><a class="wizard-shot" href="assets/images/wizard-redesign-02-animation.webp"><img src="assets/images/wizard-redesign-02-animation.webp" alt="Animation" width="1100" height="682" loading="lazy"></a><figcaption><strong>Animation.</strong> Pick the traversal montages and point the wizard to your Game Animation Sample project.</figcaption></figure><figure><a class="wizard-shot" href="assets/images/wizard-redesign-03-view-and-extras.webp"><img src="assets/images/wizard-redesign-03-view-and-extras.webp" alt="View and extras" width="1100" height="682" loading="lazy"></a><figcaption><strong>View and extras.</strong> This first-person Chaos setup has all extras selected. Scroll down for the first-person camera limits.</figcaption></figure></div>
 <div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>20</span></div></section>
 
-<section class="sheet" id="setup-wizard-screens-3" aria-label="Review and start setup"><h2>Wizard screens: Review and start setup</h2>
+<section class="sheet wizard-sheet" id="setup-wizard-screens-3" aria-label="Review and start setup"><h2>Wizard screens: Review and start setup</h2>
 <p>Review the selected setup before generating assets. The setup page reports progress and prompts for verification, install or restart as needed.</p>
-<div class="shots"><figure><a href="assets/images/wizard-redesign-04-review.webp"><img src="assets/images/wizard-redesign-04-review.webp" alt="Review your setup" width="1100" height="682" loading="lazy"></a><figcaption><strong>Review your setup.</strong> Confirm the options and click Set up my pawn. Follow the remaining prompts in the wizard.</figcaption></figure></div>
+<div class="shots"><figure><a class="wizard-shot" href="assets/images/wizard-redesign-04-review.webp"><img src="assets/images/wizard-redesign-04-review.webp" alt="Review your setup" width="1100" height="682" loading="lazy"></a><figcaption><strong>Review your setup.</strong> Confirm the options and click Set up my pawn. Follow the remaining prompts in the wizard.</figcaption></figure></div>
 <div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>21</span></div></section>
 
 <section class="sheet" id="copy-into-project" aria-label="Copy an engine pawn or mesh into your project"><h2>Copy an engine pawn or mesh into your project</h2>
