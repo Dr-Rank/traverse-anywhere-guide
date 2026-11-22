@@ -1,6 +1,6 @@
 ## Create the variant
 
-First person works on **CMC, GMC, Network Prediction Mover and Chaos Mover**.
+First person works on **CMC, GMC, Network Prediction Mover and Chaos Mover**. Select **First person** on **View and extras** in [guided setup](#use-the-setup-wizard) to create the variant automatically. Use the steps below to create one later from **Advanced tools**.
 
 1. Complete the pawn's traversal setup first. **Full GASP motion matching is recommended**, because it includes responsive turn in place: prepare it, install it, and select its generated pawn.
 2. In the setup window's **First-person variant** section, press **Create first-person variant**. Generation is unavailable during Play.

@@ -16,7 +16,7 @@ Motion matching, IK and motion warping still run during gameplay; they are separ
 
 ## Prepare the library
 
-In the setup window, set the **GASP project** folder in step 1, then expand **Full animation setup: create a new pawn**. The [guided setup](#use-the-setup-wizard) fills these in for you when you choose a new pawn.
+For guided generation, choose **Create a new pawn from a mesh** in the [setup wizard](#use-the-setup-wizard). The wizard prepares, verifies and installs the library, then runs the pawn checks. For the manual route below, open **Advanced tools**, set the **GASP project** folder and expand **Full animation setup: create a new pawn**.
 
 1. Choose the movement system: **Character Movement (CMC)**, **Chaos Mover**, **NP Mover** or **GMC**. GMC needs its [separately purchased plugin](#prepare-a-gmc-project).
 2. Choose the **Target skeletal mesh**: the mesh you want to see in game. If it is engine or plugin content (for example the Mover examples' `SKM_Manny_Simple`), press **Copy mesh into my project** first; the new pawn is built on the copy. See [the copy step](#copy-into-project).

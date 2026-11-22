@@ -4,7 +4,7 @@ Explore the traversal tools and the feature set, then follow the setup route for
 
 | Feature group | What you will find |
 | --- | --- |
-| Character setup | A setup window with per-row checks and fixes, a seven-question guided setup, and copying of engine example pawns. Keep your locomotion or generate a full-animation character. |
+| Character setup | A setup window with per-row checks and fixes, a guided setup wizard with live import progress and restart recovery, and copying of engine example pawns. Keep your locomotion or generate a full-animation character. |
 | Animation libraries | **True offline retargeting: no dynamic runtime retargeting.** Target-skeleton animation assets, motion matching, pose history and choosers. |
 | Styles and traversal | Neutral and Relaxed styles; hurdles, vaults, mantles and climbs; motion warping. |
 | Contact and recovery | Hand goals, foot clearance and blending back to locomotion. |

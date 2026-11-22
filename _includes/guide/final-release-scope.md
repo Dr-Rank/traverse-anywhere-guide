@@ -8,7 +8,7 @@ This guide describes the current tester build. Everything below is in that build
 | --- | --- |
 | Traversal and objects | Hurdles, vaults, mantles and climbs up to 300 cm; automatic ledge queries; moving objects; one-click **Make Traversable**, fitted proxies and pawn collision, filters, level conversion tools and editor diagnostics. |
 | Four movement systems | **CMC, GMC, Network Prediction Mover and Chaos Mover**, each with its own native integration. |
-| Setup | The [setup window](#setup-window), the seven-question [guided setup](#use-the-setup-wizard), per-row checks and fixes, and [copying engine example pawns](#copy-into-project) into your project. |
+| Setup | The [setup window](#setup-window), the [guided setup wizard](#use-the-setup-wizard), per-row checks and fixes, and [copying engine example pawns](#copy-into-project) into your project. |
 | Full animation setup | A generated pawn per backend with GASP locomotion, motion matching, pose history, choosers, Pose Search databases, mirroring and warping, prepared with **offline retargeting, no dynamic runtime retargeting**. |
 | Supported skeletons | UE5 Manny and Quinn, UE4 Mannequin, UEFN Mannequin, and male and female Animan. |
 | Slides | Requested slope slide, automatic steep-slope slide and flat crouch slide, with entry, loop and exit animation, on all four backends. |

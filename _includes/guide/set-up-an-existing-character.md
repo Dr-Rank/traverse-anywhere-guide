@@ -1,6 +1,8 @@
 Use this route to add traversal while keeping your current walking, running and idle animations.
 
-## Choose your character
+In the [setup wizard](#use-the-setup-wizard), choose **I have a pawn** and then **Keep my locomotion and add traversal**. The steps below describe the manual route in **Advanced tools**.
+
+## Choose your pawn
 
 1. Open the [setup window](#setup-window) and pick the **Pawn Blueprint** your game uses in step 1. Check the mesh, skeleton and Animation Blueprint shown underneath.
 2. If the pawn is engine or plugin content, press **Copy into my project** first. See [Copy an engine pawn into your project](#copy-into-project).
