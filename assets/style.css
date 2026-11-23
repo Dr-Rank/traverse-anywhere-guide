@@ -13,6 +13,28 @@
 .sheet p>img{display:block;max-width:100%;height:auto;margin:10px 0 18px;border:1px solid #c5d2da}.sheet p>img[src*="toolbar"]{border:0}
 td code{overflow-wrap:normal;word-break:normal;white-space:nowrap}
 
+.plugin-table { scroll-margin-top: 100px; }
+.plugin-table tbody th { background: #f5f8fa; color: inherit; font-weight: normal; }
+.plugin-table tbody tr:nth-child(odd) th { background: #fff; }
+.plugin-table-label { display: none; }
+
+@media screen and (max-width: 820px) {
+  .plugin-table, .plugin-table tbody { display: block; overflow: visible; }
+  .plugin-table { font-size: 14px; }
+  .plugin-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .plugin-table tbody tr { display: block; margin-bottom: 12px; border: 1px solid #cfdae1; border-radius: 6px; overflow: hidden; }
+  .plugin-table tbody th,
+  .plugin-table tbody tr:nth-child(odd) th { display: block; padding: 10px 12px; background: #e2f3f6; font-weight: bold; }
+  .plugin-table tbody td { display: block; padding: 7px 12px; border: 0; }
+  .plugin-table tbody td:last-child { padding-bottom: 12px; }
+  .plugin-table code { white-space: normal; overflow-wrap: anywhere; }
+  .plugin-table-label { display: block; margin-bottom: 2px; color: #415a6b; font-size: 12px; font-weight: bold; }
+}
+
+@media screen and (max-width: 420px) {
+  .plugin-table { width: calc(100% + 30px); margin-inline-start: -30px; }
+}
+
 /* Keep wizard screenshots readable on the web while preserving the printed guide layout. */
 @media screen {
   .wizard-sheet { min-height: 0; }

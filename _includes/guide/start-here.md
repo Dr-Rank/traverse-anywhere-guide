@@ -20,13 +20,48 @@ Prepare your character, then right-click a static mesh and choose **Make Travers
 
 2. Copy the plugins into your project's **Plugins** folder. There are five, all listed under one **Traverse Anywhere** category in **Edit > Plugins**. **Always copy `Traversal` and `TraversalGaspExtras`**, then add the plugin for your movement system:
 
-   | Plugin folder | Name in Edit > Plugins | What it adds | When you need it |
-   | --- | --- | --- | --- |
-   | `Traversal` | GASP & Traverse Anywhere | Traversable objects, ledge detection, traversal for Character Movement (CMC), the setup window and wizard, GASP import, first-person presentation | Always |
-   | `TraversalGaspExtras` | Traverse Anywhere - GASP Extras | Ragdoll and get-up, hit reactions, injuries, paired interactions and slides, shared by every movement system, with Character Movement support built in | Always (Mover and GMC need it even without extras) |
-   | `TraversalMover` | Traverse Anywhere - Mover | Network Prediction Mover, including its extras | NP Mover, and Chaos Mover |
-   | `TraversalMoverChaos` | Traverse Anywhere - Chaos Mover | Chaos Mover, including its extras | Chaos Mover (with `TraversalMover`) |
-   | `TraversalGMC` | Traverse Anywhere - GMC | General Movement Component, including its extras | GMC only: see below |
+   <table class="plugin-table" id="plugin-list" role="table" aria-label="Traverse Anywhere plugins">
+     <thead role="rowgroup">
+       <tr role="row">
+         <th scope="col" role="columnheader">Plugin folder</th>
+         <th scope="col" role="columnheader">Name in Edit &gt; Plugins</th>
+         <th scope="col" role="columnheader">What it adds</th>
+         <th scope="col" role="columnheader">When you need it</th>
+       </tr>
+     </thead>
+     <tbody role="rowgroup">
+       <tr role="row">
+         <th scope="row" role="rowheader"><code>Traversal</code></th>
+         <td role="cell"><span class="plugin-table-label" aria-hidden="true">Name in Edit &gt; Plugins</span>GASP &amp; Traverse Anywhere</td>
+         <td role="cell"><span class="plugin-table-label" aria-hidden="true">What it adds</span>Traversable objects, ledge detection, traversal for Character Movement (CMC), the setup window and wizard, GASP import, first-person presentation</td>
+         <td role="cell"><span class="plugin-table-label" aria-hidden="true">When you need it</span>Always</td>
+       </tr>
+       <tr role="row">
+         <th scope="row" role="rowheader"><code>TraversalGaspExtras</code></th>
+         <td role="cell"><span class="plugin-table-label" aria-hidden="true">Name in Edit &gt; Plugins</span>Traverse Anywhere - GASP Extras</td>
+         <td role="cell"><span class="plugin-table-label" aria-hidden="true">What it adds</span>Ragdoll and get-up, hit reactions, injuries, paired interactions and slides, shared by every movement system, with Character Movement support built in</td>
+         <td role="cell"><span class="plugin-table-label" aria-hidden="true">When you need it</span>Always (Mover and GMC need it even without extras)</td>
+       </tr>
+       <tr role="row">
+         <th scope="row" role="rowheader"><code>TraversalMover</code></th>
+         <td role="cell"><span class="plugin-table-label" aria-hidden="true">Name in Edit &gt; Plugins</span>Traverse Anywhere - Mover</td>
+         <td role="cell"><span class="plugin-table-label" aria-hidden="true">What it adds</span>Network Prediction Mover, including its extras</td>
+         <td role="cell"><span class="plugin-table-label" aria-hidden="true">When you need it</span>NP Mover and Chaos Mover</td>
+       </tr>
+       <tr role="row">
+         <th scope="row" role="rowheader"><code>TraversalMoverChaos</code></th>
+         <td role="cell"><span class="plugin-table-label" aria-hidden="true">Name in Edit &gt; Plugins</span>Traverse Anywhere - Chaos Mover</td>
+         <td role="cell"><span class="plugin-table-label" aria-hidden="true">What it adds</span>Chaos Mover, including its extras</td>
+         <td role="cell"><span class="plugin-table-label" aria-hidden="true">When you need it</span>Chaos Mover (with <code>TraversalMover</code>)</td>
+       </tr>
+       <tr role="row">
+         <th scope="row" role="rowheader"><code>TraversalGMC</code></th>
+         <td role="cell"><span class="plugin-table-label" aria-hidden="true">Name in Edit &gt; Plugins</span>Traverse Anywhere - GMC</td>
+         <td role="cell"><span class="plugin-table-label" aria-hidden="true">What it adds</span>General Movement Component, including its extras</td>
+         <td role="cell"><span class="plugin-table-label" aria-hidden="true">When you need it</span><a href="#prepare-a-gmc-project">GMC only</a></td>
+       </tr>
+     </tbody>
+   </table>
 
    **CMC** needs only the first two. **NP Mover** adds `TraversalMover`; **Chaos Mover** adds `TraversalMover` and `TraversalMoverChaos`. Copying all of the tester download's `Plugins` folder is fine. Keep **one copy** of each plugin. Never leave a second copy elsewhere in the project or in the engine.
 
