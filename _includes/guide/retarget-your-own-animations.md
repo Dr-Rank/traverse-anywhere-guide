@@ -32,7 +32,7 @@ Play the copies on your character before using them in gameplay, especially hand
 
 ## Limits
 
-- **Both skeletons must be ones Traverse Anywhere supports:** UE5 Manny and Quinn, UE4 Mannequin, UEFN Mannequin, and male and female Animan. Any other pair is refused with the reason.
+- **Both skeletons must be ones Traverse Anywhere supports:** UE5 Manny and Quinn, the UE4 male and female mannequins, the UEFN Mannequin, and male and female Animan. Any other pair is refused with the reason.
 - The animations must all be on **one skeleton**, and the target must be on a **different** one.
 - Animation Sequences and Montages only; Blend Spaces and other animation assets are not converted.
 - The animations' skeleton needs a mesh in the project (its preview mesh, or any mesh on it): the retargeter reads its reference pose.

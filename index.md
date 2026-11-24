@@ -32,7 +32,7 @@ permalink: /
 
 <section class="sheet" id="features-animation-libraries" aria-label="Features animation libraries"><h2>Features animation libraries</h2>
 <figure><img src="assets/images/13-full-animation-setup.webp" alt="Full animation preparation" width="1440" height="810"><figcaption><strong>Full animation preparation.</strong> Prepare and verify a motion-matching library for your selected mesh, then install the generated pawn, game mode and settings. Available for CMC, GMC, Network Prediction Mover and Chaos Mover. Existing gameplay pawns are kept separate.</figcaption></figure>
-<figure><img src="assets/images/14-skeleton-specific-libraries.webp" alt="Supported skeleton libraries" width="1440" height="810"><figcaption><strong>Supported skeleton libraries.</strong> Import baked traversal clips for Manny, Quinn, UE4, UEFN and male or female Animan. Multiple skeletons and differing mesh poses retain their own libraries without overwriting other targets.</figcaption></figure>
+<figure><img src="assets/images/14-skeleton-specific-libraries.webp" alt="Supported skeleton libraries" width="1440" height="810"><figcaption><strong>Supported skeleton libraries.</strong> Import baked traversal clips for UE5 Manny and Quinn, the UE4 male and female mannequins, the UEFN Mannequin, and male or female Animan. Multiple skeletons and differing mesh poses retain their own libraries without overwriting other targets.</figcaption></figure>
 
 <div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>7</span></div></section>
 

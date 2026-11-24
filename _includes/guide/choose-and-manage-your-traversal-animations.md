@@ -10,7 +10,7 @@ Generated clips normally appear under **Content/TraverseAnywhere/Traversal**, in
 
 You can set up more than one skeleton in the same project. Select and complete each pawn separately, then test each mesh. Reusing a skeleton does not automatically mean every mesh has the same proportions or reference pose.
 
-Supported character families include UE5 Manny and Quinn, UE4 Mannequin, UEFN Mannequin and male/female Animan. Choose the actual mesh you intend to use; custom proportions and rigs still need a gameplay check.
+Supported character families include UE5 Manny and Quinn, the UE4 male and female mannequins, the UEFN Mannequin, and male or female Animan. Choose the actual mesh you intend to use; custom proportions and rigs still need a gameplay check.
 
 ## Update an existing setup
 
