@@ -34,7 +34,7 @@ Play the copies on your character before using them in gameplay, especially hand
 
 ## Limits
 
-- **Choose supported skeletons.** The supported bodies are UE5 Manny and Quinn, the UE4 male and female mannequins, the UEFN Mannequin, male and female Animan, and compatible MetaHuman bodies. The result explains any pair the retargeter cannot match.
+- **Choose supported skeletons.** The supported bodies are UE5 Manny and Quinn, the UE4 male and female mannequins, the UEFN Mannequin, Animan, and compatible MetaHuman bodies. The result explains any pair the retargeter cannot match.
 - The animations must all be on **one skeleton**, and the target must be on a **different** one.
 - Animation Sequences and Montages only; Blend Spaces and other animation assets are not converted.
 - The animations' skeleton needs a mesh in the project (its preview mesh, or any mesh on it): the retargeter reads its reference pose.

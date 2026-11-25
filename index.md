@@ -33,10 +33,10 @@ permalink: /
 <section class="sheet" id="features-animation-libraries" aria-label="Features animation libraries"><h2>Features animation libraries</h2>
 <figure><img src="assets/images/13-full-animation-setup.webp" alt="Full animation preparation" width="1440" height="810"><figcaption><strong>Full animation preparation.</strong> Prepare and verify a motion-matching library for your selected mesh, then install the generated pawn, game mode and settings. Available for CMC, GMC, Network Prediction Mover and Chaos Mover. Existing gameplay pawns are kept separate.</figcaption></figure>
 <figure id="supported-skeleton-libraries">
-  <a href="assets/images/14-skeleton-specific-libraries-kellan.png" title="View the full-size lineup">
-    <img src="assets/images/14-skeleton-specific-libraries-kellan.png" alt="UE5 Manny, UE5 Quinn, UE4 Mannequins, UEFN, male and female Animan, and the fully assembled MetaHuman Kellan from the Game Animation Sample, standing in one lineup" width="1920" height="1080" loading="lazy">
+  <a href="assets/images/14-skeleton-specific-libraries-kellan.png?v=ue4-female" title="View the full-size lineup">
+    <img src="assets/images/14-skeleton-specific-libraries-kellan.png?v=ue4-female" alt="UE5 Manny, UE5 Quinn, UE4 Male, UEFN, Animan, UE4 Female, and the fully assembled MetaHuman Kellan from the Game Animation Sample, standing in one lineup" width="1920" height="1080" loading="lazy">
   </a>
-  <figcaption><strong>Supported skeleton libraries.</strong> Bake animations for UE5 Manny and Quinn, the UE4 male and female mannequins, the UEFN Mannequin, male and female Animan, and <a href="#use-a-metahuman-from-the-game-animation-sample">compatible MetaHuman bodies through full GASP setup</a>. Each target keeps its own library.</figcaption>
+  <figcaption><strong>Supported skeleton libraries.</strong> Bake animations for UE5 Manny and Quinn, the UE4 male and female mannequins, the UEFN Mannequin, Animan, and <a href="#use-a-metahuman-from-the-game-animation-sample">compatible MetaHuman bodies through full GASP setup</a>. Each target keeps its own library.</figcaption>
 </figure>
 
 <div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>7</span></div></section>
