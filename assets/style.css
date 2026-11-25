@@ -46,3 +46,5 @@ td code{overflow-wrap:normal;word-break:normal;white-space:nowrap}
   .wizard-sheet .shots { margin-inline: -12px; }
   .wizard-sheet figcaption { padding-inline: 12px; }
 }
+
+#supported-skeleton-libraries { scroll-margin-top: 100px; }
