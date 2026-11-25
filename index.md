@@ -32,7 +32,16 @@ permalink: /
 
 <section class="sheet" id="features-animation-libraries" aria-label="Features animation libraries"><h2>Features animation libraries</h2>
 <figure><img src="assets/images/13-full-animation-setup.webp" alt="Full animation preparation" width="1440" height="810"><figcaption><strong>Full animation preparation.</strong> Prepare and verify a motion-matching library for your selected mesh, then install the generated pawn, game mode and settings. Available for CMC, GMC, Network Prediction Mover and Chaos Mover. Existing gameplay pawns are kept separate.</figcaption></figure>
-<figure><img src="assets/images/14-skeleton-specific-libraries.webp" alt="Supported skeleton libraries" width="1440" height="810"><figcaption><strong>Supported skeleton libraries.</strong> Import baked traversal clips for UE5 Manny and Quinn, the UE4 male and female mannequins, the UEFN Mannequin, and male or female Animan. Multiple skeletons and differing mesh poses retain their own libraries without overwriting other targets.</figcaption></figure>
+<figure id="supported-skeleton-libraries">
+  <div class="skeleton-library-art">
+    <img src="assets/images/14-skeleton-specific-libraries.webp" alt="UE5 Manny, UE5 Quinn, UE4, UEFN, and male and female Animan in the skeleton lineup" width="1440" height="810">
+    <a class="skeleton-metahuman" href="#use-a-metahuman-from-the-game-animation-sample">
+      <img src="assets/images/metahuman-kellan.jpg" alt="" width="256" height="256" loading="lazy">
+      <span><strong>MetaHuman</strong><small>Kellan from GASP</small></span>
+    </a>
+  </div>
+  <figcaption><strong>Supported skeleton libraries.</strong> Bake animations for UE5 Manny and Quinn, the UE4 male and female mannequins, the UEFN Mannequin, male and female Animan, and <a href="#use-a-metahuman-from-the-game-animation-sample">compatible MetaHuman bodies through full GASP setup</a>. Each target keeps its own library.</figcaption>
+</figure>
 
 <div class="sheet-footer"><span>EXECUTE GAMES / GASP &amp; TRAVERSE ANYWHERE / USER GUIDE · TESTER EDITION</span><span>7</span></div></section>
 

@@ -44,7 +44,7 @@ Use a simple block in a clear level. Try walking, running and sprinting approach
 | A paired action is refused | Check both participants: on the ground, in front, within 2 m, not busy, and on a supported movement system. |
 | First-person view stays limited | Your own **Start Camera ... Restrictions** need matching **Stop** calls. The built-in limits release when the action ends. |
 | Camera functions do nothing | The camera exists only for the locally controlled player. Check **Is Valid** on Get Component by Class, and call from the owning client. |
-| Retargeting my own animations is refused | Both skeletons must be supported ones (UE5 Manny and Quinn, UE4 male and female mannequins, UEFN Mannequin, and male and female Animan), the animations must share one skeleton, and the target must be on another. An existing copy is never overwritten: change the suffix or folder. |
+| Retargeting my own animations is refused | Check the [supported skeleton list](#retarget-your-own-animations), including compatible MetaHuman body meshes. The selected animations must share one skeleton and the target must use a different one. Change the suffix or folder if a copy already exists. |
 
 Test each extra on its own and in the combinations you intend to ship, including with all extras off. Cover third and first person, the meshes and physics assets you ship, server, owner and remote views, spectators, lag and packet loss, and packaged gameplay.
 

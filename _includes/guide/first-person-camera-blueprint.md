@@ -50,7 +50,7 @@ Select the **Traversal First Person Presentation** component on your first-perso
 | Landing Head Follow Seconds | 1.0 s | How long the camera stays on the head after landing. |
 | Crouch Head Follow Seconds | 0.6 s | How long the camera follows the head into a crouch. |
 | Eye Offset | (0, 0, 64) | The standing eye position, tuned for the UE5 mannequin. |
-| Match Eye To Head Height | On | Moves the eye with the mesh's head height, so UE4, UEFN and Animan meshes keep the same eye-to-head relationship. |
+| Match Eye To Head Height | On | Adjusts the camera to the mesh's head height across supported body proportions, including compatible MetaHumans. |
 | Turn Body With Camera | Off | Turns the owner body with the camera. |
 | Use Reachable Arm IK | Off | Keeps the shoulder and solves planted arms without stretching. |
 | Add Crouch Input If Missing | On | Adds a crouch binding only if your pawn has none. |
