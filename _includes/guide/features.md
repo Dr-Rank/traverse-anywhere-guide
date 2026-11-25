@@ -6,6 +6,7 @@ Explore the traversal tools and the feature set, then follow the setup route for
 | --- | --- |
 | Character setup | A setup window with per-row checks and fixes, a guided setup wizard with live import progress and restart recovery, and copying of engine example pawns. Keep your locomotion or generate a full-animation character. |
 | Animation libraries | **True offline retargeting: no dynamic runtime retargeting.** Target-skeleton animation assets, motion matching, pose history and choosers. |
+| MetaHumans | Set up a [compatible MetaHuman body](#use-a-metahuman-from-the-game-animation-sample) with baked GASP animations. Use Kellan from the sample or assemble your own MetaHuman as a playable pawn. |
 | Styles and traversal | Neutral and Relaxed styles; hurdles, vaults, mantles and climbs; motion warping. |
 | Contact and recovery | Hand goals, foot clearance and blending back to locomotion. |
 | Objects and proxies | One-click object setup, level conversion, fitted surfaces, filters, collision and rebuilding. |

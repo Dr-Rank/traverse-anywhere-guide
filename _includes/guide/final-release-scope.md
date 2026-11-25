@@ -10,7 +10,7 @@ This guide describes the current tester build. Everything below is in that build
 | Four movement systems | **CMC, GMC, Network Prediction Mover and Chaos Mover**, each with its own native integration. |
 | Setup | The [setup window](#setup-window), the [guided setup wizard](#use-the-setup-wizard), per-row checks and fixes, and [copying engine example pawns](#copy-into-project) into your project. |
 | Full animation setup | A generated pawn per backend with GASP locomotion, motion matching, pose history, choosers, Pose Search databases, mirroring and warping, prepared with **offline retargeting, no dynamic runtime retargeting**. |
-| Supported skeletons | UE5 Manny and Quinn, the UE4 male and female mannequins, the UEFN Mannequin, and male and female Animan. |
+| Supported skeletons | UE5 Manny and Quinn, the UE4 male and female mannequins, the UEFN Mannequin, male and female Animan, and [compatible MetaHuman bodies](#use-a-metahuman-from-the-game-animation-sample) through full animation setup. |
 | Slides | Requested slope slide, automatic steep-slope slide and flat crouch slide, with entry, loop and exit animation, on all four backends. |
 | Ragdoll and recovery | Active ragdoll, knockdown, physical and motion-matched get-up, and death ragdolls. |
 | Physical reactions | Physics Control hit reactions without a full knockdown, and injury-dependent strength. |

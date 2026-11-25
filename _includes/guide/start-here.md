@@ -6,6 +6,8 @@
 
 Choose **CMC, GMC, Network Prediction Mover or Chaos Mover**. The editor also uses the shorter name **Traverse Anywhere**, for example on its window tab.
 
+Using a MetaHuman? [Start with GASP's Kellan or assemble your own playable MetaHuman pawn](#use-a-metahuman-from-the-game-animation-sample).
+
 Prepare your character, then right-click a static mesh and choose **Make Traversable**. GASP & Traverse Anywhere creates the Blueprint, adds traversal and generates its proxies for you. Drag the new Blueprint into your level and try it.
 
 <div class="notice dependency"><strong>GMC is a paid third-party product.</strong> Purchase, install and enable it separately to use the GMC route. It is not included with GASP & Traverse Anywhere. The other three movement routes do not need it. See <a href="#prepare-a-gmc-project">GMC setup</a>.</div>
