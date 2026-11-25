@@ -46,15 +46,3 @@ td code{overflow-wrap:normal;word-break:normal;white-space:nowrap}
   .wizard-sheet .shots { margin-inline: -12px; }
   .wizard-sheet figcaption { padding-inline: 12px; }
 }
-
-.skeleton-library-art { display: grid; grid-template-columns: minmax(0, 1fr) minmax(108px, 21%); gap: 10px; }
-.skeleton-metahuman { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 8px; border-radius: 4px; background: #101e2b; color: #fff; text-align: center; text-decoration: none; }
-.skeleton-metahuman img { width: 100%; max-width: 122px; aspect-ratio: 1; }
-.skeleton-metahuman strong, .skeleton-metahuman small { display: block; }
-.skeleton-metahuman small { color: #b7d7e2; }
-.skeleton-metahuman:hover strong, .skeleton-metahuman:focus-visible strong { text-decoration: underline; }
-@media screen and (max-width: 650px) {
-  .skeleton-library-art { grid-template-columns: minmax(0, 1fr); }
-  .skeleton-metahuman { flex-direction: row; justify-content: flex-start; text-align: left; }
-  .skeleton-metahuman img { width: 84px; }
-}
