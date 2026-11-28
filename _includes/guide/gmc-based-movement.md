@@ -6,7 +6,7 @@ Add a **Traversable** component to the platform Blueprint. Attach the visible me
 
 ### Relative for a replicated platform
 
-1. Use a platform Actor with a **Movable** collision root. Enable **Replicates** and **Replicate Movement** on the platform Blueprint itself, and drive the platform transform on the server. Turning replication on at runtime on the server only is not enough: the owning client then cannot predict the platform as its base and corrects once at the start of each climb.
+1. Use a platform Actor with a **Movable** collision root. Enable **Replicates** and **Replicate Movement** on the platform Blueprint itself, and drive the platform transform on the server.
 2. Set the pawn's **Source** to **Relative**. The server validates attachment and GMC synchronizes the pawn relative to the base.
 3. **If the platform's root is a plain Scene component** rather than its collision, turn off **Use Attach Parent As Base** under **Based Movement → Relative** on the pawn's GMC Organic Movement component. With it on (GMC's default), GMC takes the outermost attach parent as the base, finds no collision there and never bases the pawn, so the pawn stays behind while the platform moves away. With it off, the base is the component the pawn stands on, such as the platform mesh or a generated traversal proxy.
 4. Start with a platform that translates slowly without rotating through the boarding point. A stationary boarding phase gives you a useful control if your route produces corrections. Test turns, tilts and faster routes separately. A deliberate walk-off can still cause a small correction when GMC releases the base.
