@@ -16,6 +16,8 @@ Motion matching, IK and motion warping still run during gameplay; they are separ
 
 ## Create the pawn in guided setup
 
+Enable **MovieSceneAnimMixer** and **Mover** in **Edit > Plugins** before starting full GASP setup. If the wizard flags a missing plugin, enable it and restart the editor. This also applies when the animation library is already installed. See [Full GASP dependencies](#full-gasp-dependencies).
+
 1. Open **Tools > GASP & Traverse Anywhere**. Choose **Create a new pawn from a mesh**, select the skeletal mesh and choose a movement system.
 2. On **Animation**, select the source Game Animation Sample project and the traversal style. Use **Copy mesh into my project** if setup asks for a writable copy.
 3. On **View & Extras**, choose first or third person and the extras you want on the new pawn. First person also offers camera limits. To change the generated extras later, set up a new pawn.

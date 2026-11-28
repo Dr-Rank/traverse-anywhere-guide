@@ -15,6 +15,10 @@ If you pick engine or plugin content, use the [copy action](#copy-into-project) 
 
 **Full GASP** creates a separate pawn, including the extras you select. If required physics bodies are missing, setup generates a compatible physics asset for the new pawn and keeps the original. To change the generated extras later, set up a new pawn.
 
+## Full GASP dependencies
+
+If the wizard or scripted preview names **MovieSceneAnimMixer** or **Mover** as missing, enable the named engine plugins in **Edit > Plugins**, restart the editor, and continue setup. Full GASP requires them even if you already installed the animation library.
+
 ## Follow setup progress
 
 1. For full GASP, the progress panel shows **conversion**, **preparation** and **verification**. It shows the current clip or check, a percentage once the total is known, and how long the current stage has been running.
@@ -26,3 +30,21 @@ If you pick engine or plugin content, use the [copy action](#copy-into-project) 
 Open **Advanced tools** from the first page when you want the individual checks or need to repair an existing setup. The guided flow runs its own required checks.
 
 [See the redesigned wizard screens](#setup-wizard-screens-1).
+
+## Run guided setup from a script
+
+You can use the same guided setup from the editor console, Python or an editor Blueprint. Both routes use the same setup choices and saved progress.
+
+1. Preview the choices before making changes. In the editor console, run:
+
+   ```text
+   TraverseAnywhere.Setup.Wizard.Preview Mesh=/Game/Characters/Hero/SKM_Hero.SKM_Hero Backend=CMC GASP="C:/Projects/GameAnimationSample"
+   ```
+
+   Use your mesh asset path and Game Animation Sample project folder. For an existing pawn, use `Pawn=/Game/.../BP_MyPawn.BP_MyPawn` instead of `Mesh=…`. A new pawn uses full GASP. Adding `FullGasp` to an existing pawn's options creates a separate pawn with GASP locomotion.
+
+2. When the preview says setup can start and you have reviewed the asset changes, run the same command with `Start` in place of `Preview`.
+3. Use `TraverseAnywhere.Setup.Wizard.Status` to check progress and `TraverseAnywhere.Setup.Wizard.Install` when the verified library is ready. Add `AutoInstall` to the start command when you want installation to occur automatically after verification.
+4. Use `TraverseAnywhere.Setup.Wizard.Pause` to pause a scripted run, or `TraverseAnywhere.Setup.Wizard.Resume` after pausing or restarting. You can also reopen the guided wizard and choose **Continue setup**. Run one guided setup at a time.
+
+For Python or editor Blueprints, use **Traversal Setup Scripting**. Its `PreviewGuidedSetup`, `StartGuidedSetup`, `GetGuidedSetupStatus`, `InstallVerifiedLibrary`, `PauseGuidedSetup` and `ResumeGuidedSetup` functions follow the same steps. An active scripted run also writes its status to `Saved/TraverseAnywhere/ScriptedSetup.json` inside your project.

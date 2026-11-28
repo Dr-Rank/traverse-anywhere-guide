@@ -15,9 +15,9 @@ For a MetaHuman, choose the **Body** Skeletal Mesh from its assembled Blueprint.
 
 ## What it does
 
-- Builds a Traverse Anywhere retargeter for this **pair of skeletons**, in its own folder under `/Game/TraverseAnywhere/Retargeters/<Source>_To_<Target>`, and reuses it next time. You can open and tune it like any IK Retargeter.
-- Bakes each animation with the corrections the imports use: **finger retargeting** (each finger bends as in the source, and on a planted hand its tip keeps the source's contact), **IK-bone pinning**, **hand contact correction** (a planted hand stays at the source's height; if the character's arm is too short to reach, the shoulder turns and the upper body leans a little, as the runtime traversal correction does), **absolute vertical pelvis motion** (a climb or jump keeps its authored height) and **knee contact correction** (kneeling knees keep their floor contact).
-- A **montage** brings the sequences it plays. Additive animations keep their additive settings, with their base pose retargeted too.
+- Builds a Traverse Anywhere retargeter for this **pair of skeleton assets** under `/Game/TraverseAnywhere/Retargeters`, and reuses it next time. Distinct skeleton assets with the same name get separate rigs. You can open and tune the retargeter like any IK Retargeter.
+- Bakes the shared pose corrections into the copies: finger bends and planted fingertips, hand contact and arm reach, authored pelvis height, knee and foot contact, and pinning of the target's existing IK helpers.
+- A **montage** brings the sequences it plays, along with its preview pose and additive reference animations when present. Additive sequences keep their additive settings and use a baked base pose on the target skeleton.
 - The copies, the retargeter and its rigs are **saved**. An existing copy is never overwritten; a run that fails keeps nothing.
 
 ## Check the result
@@ -38,4 +38,4 @@ Play the copies on your character before using them in gameplay, especially hand
 - The animations must all be on **one skeleton**, and the target must be on a **different** one.
 - Animation Sequences and Montages only; Blend Spaces and other animation assets are not converted.
 - The animations' skeleton needs a mesh in the project (its preview mesh, or any mesh on it): the retargeter reads its reference pose.
-- Knee contact correction is qualified on Manny targets; on other targets, check kneeling poses.
+- Check the saved copies on your target mesh, especially crouching, kneeling and planted hands and feet.
